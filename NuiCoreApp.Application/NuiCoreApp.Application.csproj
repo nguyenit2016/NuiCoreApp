@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Implementation\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NuiCoreApp.Data\NuiCoreApp.Data.csproj" />
+    <ProjectReference Include="..\NuiCoreApp.EF\NuiCoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\NuiCoreApp.Utilities\NuiCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
