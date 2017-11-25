@@ -18,4 +18,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NuiCoreApp.Application\NuiCoreApp.Application.csproj" />
+    <ProjectReference Include="..\NuiCoreApp.Data\NuiCoreApp.Data.csproj" />
+    <ProjectReference Include="..\NuiCoreApp.EF\NuiCoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\NuiCoreApp.Infrastructure\NuiCoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\NuiCoreApp.Utilities\NuiCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
