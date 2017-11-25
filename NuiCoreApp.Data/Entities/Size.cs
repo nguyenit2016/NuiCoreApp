@@ -4,15 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NuiCoreApp.Data.Entities
 {
-    [Table("Tags")]
-    public class Tag : DomainEntity<string>
+    [Table("Sizes")]
+    public class Size : DomainEntity<int>
     {
-        [MaxLength(50)]
-        [Required]
+        [StringLength(250)]
         public string Name { get; set; }
-
-        [MaxLength(50)]
-        [Required]
-        public string Type { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NuiCoreApp.Data.Entities;
-using TeduCoreApp.Data.EF.Extensions;
+using NuiCoreApp.Data.EF.Extensions;
 
 namespace NuiCoreApp.Data.EF.Configurations
 {

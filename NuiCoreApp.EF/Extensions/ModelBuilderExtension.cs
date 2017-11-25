@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace TeduCoreApp.Data.EF.Extensions
+namespace NuiCoreApp.Data.EF.Extensions
 {
     public static class ModelBuilderExtensions
     {

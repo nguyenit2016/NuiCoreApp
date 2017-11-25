@@ -2,6 +2,7 @@
 using NuiCoreApp.Data.Interfaces;
 using NuiCoreApp.Infrastructure.SharedKernel;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -49,6 +50,10 @@ namespace NuiCoreApp.Data.Entities
 
         [ForeignKey("CategoryId")]
         public virtual ProductCategory ProductCategory { get; set; }
+
+        public virtual ICollection<ProductTag> ProductTags { get; set; }
+
+        public virtual ICollection<BillDetail> BillDetails { get; set; }
 
         public Status Status { get; set; }
 

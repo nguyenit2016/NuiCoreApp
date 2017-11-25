@@ -9,6 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\NuiCoreApp.Data\NuiCoreApp.Data.csproj" />
     <ProjectReference Include="..\NuiCoreApp.Infrastructure\NuiCoreApp.Infrastructure.csproj" />
     <ProjectReference Include="..\NuiCoreApp.Utilities\NuiCoreApp.Utilities.csproj" />
