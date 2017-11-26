@@ -11,9 +11,9 @@ using System.Linq;
 
 namespace NuiCoreApp.Data.EF
 {
-    public class DbContext : IdentityDbContext<AppUser, AppRole, Guid>
+    public class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
-        public DbContext(DbContextOptions options) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
         }
 
@@ -39,7 +39,7 @@ namespace NuiCoreApp.Data.EF
         public DbSet<Page> Pages { get; set; }
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductCategory> ProductCategorys { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<ProductQuantity> ProductQuantitys { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }

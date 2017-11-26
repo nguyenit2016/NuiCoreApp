@@ -10,9 +10,9 @@ namespace NuiCoreApp.Data.EF
 {
     public class EFRepository<T, K> : IRepository<T, K>, IDisposable where T : DomainEntity<K>
     {
-        private readonly DbContext _context;
+        private readonly AppDbContext _context;
 
-        public EFRepository(DbContext context)
+        public EFRepository(AppDbContext context)
         {
             _context = context;
         }
