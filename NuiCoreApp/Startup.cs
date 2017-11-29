@@ -13,6 +13,11 @@ using NuiCoreApp.Models;
 using NuiCoreApp.Services;
 using NuiCoreApp.Data.Entities;
 using NuiCoreApp.Data.EF;
+using AutoMapper;
+using NuiCoreApp.Data.EF.Repositories;
+using NuiCoreApp.Data.IRepositories;
+using NuiCoreApp.Application.Implementation;
+using NuiCoreApp.Application.Interfaces;
 
 namespace NuiCoreApp
 {
@@ -40,8 +45,15 @@ namespace NuiCoreApp
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
 
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
+
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
+
             services.AddMvc();
         }
 

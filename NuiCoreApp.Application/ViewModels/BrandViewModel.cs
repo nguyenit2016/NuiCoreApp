@@ -1,14 +1,12 @@
 ﻿using NuiCoreApp.Data.Enums;
-using NuiCoreApp.Data.Interfaces;
-using NuiCoreApp.Infrastructure.SharedKernel;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NuiCoreApp.Data.Entities
+namespace NuiCoreApp.Application.ViewModels
 {
-    [Table("Brands")]
-    public class Brand : DomainEntity<int>, ISwitchable
+    public class BrandViewModel
     {
+        public int Id { get; set; }
+
         [StringLength(255)]
         [Required]
         public string Name { get; set; }
