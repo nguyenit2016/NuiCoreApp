@@ -11,13 +11,17 @@ using Microsoft.Extensions.DependencyInjection;
 using NuiCoreApp.Data;
 using NuiCoreApp.Models;
 using NuiCoreApp.Services;
-using NuiCoreApp.Data.Entities;
 using NuiCoreApp.Data.EF;
+using NuiCoreApp.Data.Entities;
 using AutoMapper;
+using NuiCoreApp.Application.Interfaces;
 using NuiCoreApp.Data.EF.Repositories;
 using NuiCoreApp.Data.IRepositories;
 using NuiCoreApp.Application.Implementation;
-using NuiCoreApp.Application.Interfaces;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
+//using NuiCoreApp.Helpers;
+using NuiCoreApp.Infrastructure.Interfaces;
 
 namespace NuiCoreApp
 {
@@ -40,6 +44,26 @@ namespace NuiCoreApp
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
+
+            // Configure Identity
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+
+                // Lockout settings
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+
+                // User settings
+                options.User.RequireUniqueEmail = true;
+            });
+
+            services.AddAutoMapper();
 
             // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
@@ -80,6 +104,9 @@ namespace NuiCoreApp
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "areaRoute",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
