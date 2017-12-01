@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {
     "gentelella": "~1.4.0",
-    "bootstrap-daterangepicker": "~2.1.25"
+    "bootstrap-daterangepicker": "~2.1.25",
+    "notifyjs": "~0.4.2",
+    "bootbox": "~4.4.0"
   }
 }
