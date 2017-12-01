@@ -112,18 +112,18 @@ namespace NuiCoreApp.Data.EF
             }
             if (_context.AdvertisementPages.Count() == 0)
             {
-                List<AdvertisementPage> pages = new List<AdvertisementPage>()
+                List<AdvertistmentPage> pages = new List<AdvertistmentPage>()
                 {
-                    new AdvertisementPage() {Id="home", Name="Trang chủ",AdvertisementPositions = new List<AdvertisementPosition>(){
-                        new AdvertisementPosition(){Id="home-left",Name="Bên trái"}
+                    new AdvertistmentPage() {Id="home", Name="Trang chủ",AdvertistmentPositions = new List<AdvertistmentPosition>(){
+                        new AdvertistmentPosition(){Id="home-left",Name="Bên trái"}
                     } },
-                    new AdvertisementPage() {Id="product-cate", Name="Danh mục sản phẩm" ,
-                        AdvertisementPositions = new List<AdvertisementPosition>(){
-                        new AdvertisementPosition(){Id="product-cate-left",Name="Bên trái"}
+                    new AdvertistmentPage() {Id="product-cate", Name="Danh mục sản phẩm" ,
+                        AdvertistmentPositions = new List<AdvertistmentPosition>(){
+                        new AdvertistmentPosition(){Id="product-cate-left",Name="Bên trái"}
                     }},
-                    new AdvertisementPage() {Id="product-detail", Name="Chi tiết sản phẩm",
-                        AdvertisementPositions = new List<AdvertisementPosition>(){
-                        new AdvertisementPosition(){Id="product-detail-left",Name="Bên trái"}
+                    new AdvertistmentPage() {Id="product-detail", Name="Chi tiết sản phẩm",
+                        AdvertistmentPositions = new List<AdvertistmentPosition>(){
+                        new AdvertistmentPosition(){Id="product-detail-left",Name="Bên trái"}
                     } },
                 };
                 _context.AdvertisementPages.AddRange(pages);

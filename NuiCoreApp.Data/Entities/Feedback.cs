@@ -10,22 +10,18 @@ namespace NuiCoreApp.Data.Entities
     [Table("Feedbacks")]
     public class Feedback : DomainEntity<int>, ISwitchable, IDateTracking
     {
-        [StringLength(255)]
+        [StringLength(250)]
         [Required]
-        public string Name { get; set; }
+        public string Name { set; get; }
 
-        [StringLength(255)]
-        public string Email { get; set; }
+        [StringLength(250)]
+        public string Email { set; get; }
 
-        [StringLength(255)]
-        [Required]
-        public string Phone { get; set; }
+        [StringLength(500)]
+        public string Message { set; get; }
 
-        [Required]
-        public string Content { get; set; }
-
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
-        public Status Status { get; set; }
+        public Status Status { set; get; }
+        public DateTime CreatedDate { set; get; }
+        public DateTime UpdatedDate { set; get; }
     }
 }

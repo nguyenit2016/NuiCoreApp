@@ -5,19 +5,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NuiCoreApp.Data.Entities
 {
-    [Table("AdvertisementPositions")]
-    public class AdvertisementPosition : DomainEntity<string>
+    [Table("AdvertistmentPositions")]
+    public class AdvertistmentPosition : DomainEntity<string>
     {
         [StringLength(20)]
-        public int PageId { get; set; }
+        public string PageId { get; set; }
 
         [StringLength(250)]
-        [Required]
         public string Name { get; set; }
 
         [ForeignKey("PageId")]
-        public virtual Page Page { get; set; }
+        public virtual AdvertistmentPage AdvertistmentPage { get; set; }
 
-        public virtual ICollection<Advertisetment> Advertisetments { get; set; }
+        public virtual ICollection<Advertistment> Advertistments { get; set; }
     }
 }

@@ -7,8 +7,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NuiCoreApp.Data.Entities
 {
-    [Table("Advertisetments")]
-    public class Advertisetment : DomainEntity<int>, ISwitchable, ISortable, IDateTracking
+    [Table("Advertistments")]
+    public class Advertistment : DomainEntity<int>, ISwitchable, ISortable
     {
         [StringLength(250)]
         public string Name { get; set; }
@@ -25,13 +25,12 @@ namespace NuiCoreApp.Data.Entities
         [StringLength(20)]
         public string PositionId { get; set; }
 
-        public Status Status { get; set; }
-        public int SortOrder { get; set; }
-
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public Status Status { set; get; }
+        public DateTime DateCreated { set; get; }
+        public DateTime DateModified { set; get; }
+        public int SortOrder { set; get; }
 
         [ForeignKey("PositionId")]
-        public virtual AdvertisementPosition AdvertisementPosition { get; set; }
+        public virtual AdvertistmentPosition AdvertistmentPosition { get; set; }
     }
 }

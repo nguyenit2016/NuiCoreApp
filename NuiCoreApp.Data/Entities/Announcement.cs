@@ -18,20 +18,19 @@ namespace NuiCoreApp.Data.Entities
 
         [Required]
         [StringLength(250)]
-        public string Title { get; set; }
+        public string Title { set; get; }
 
         [StringLength(250)]
-        public string Content { get; set; }
+        public string Content { set; get; }
 
-        [StringLength(450)]
-        public string UserId { get; set; }
+        public Guid UserId { set; get; }
 
         [ForeignKey("UserId")]
         public virtual AppUser AppUser { get; set; }
 
         public virtual ICollection<AnnouncementUser> AnnouncementUsers { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
-        public Status Status { get; set; }
+        public Status Status { set; get; }
+        public DateTime CreatedDate { set; get; }
+        public DateTime UpdatedDate { set; get; }
     }
 }

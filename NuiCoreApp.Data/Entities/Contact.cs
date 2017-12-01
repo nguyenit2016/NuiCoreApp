@@ -1,37 +1,34 @@
 ﻿using NuiCoreApp.Data.Enums;
-using NuiCoreApp.Data.Interfaces;
 using NuiCoreApp.Infrastructure.SharedKernel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NuiCoreApp.Data.Entities
 {
-    [Table("Contacts")]
-    public class Contact : DomainEntity<string>, ISwitchable
+    [Table("ContactDetails")]
+    public class Contact : DomainEntity<string>
     {
-        [StringLength(256)]
+        [StringLength(250)]
         [Required]
-        public string Name { get; set; }
-
-        [StringLength(500)]
-        public string Address { get; set; }
-
-        [StringLength(15)]
-        public string Phone { get; set; }
-
-        [StringLength(255)]
-        public string Website { get; set; }
+        public string Name { set; get; }
 
         [StringLength(50)]
-        public string Email { get; set; }
+        public string Phone { set; get; }
+
+        [StringLength(250)]
+        public string Email { set; get; }
+
+        [StringLength(250)]
+        public string Website { set; get; }
+
+        [StringLength(250)]
+        public string Address { set; get; }
 
         public string Other { set; get; }
 
-        [StringLength(255)]
-        public string Longtitude { get; set; }
+        public double? Lat { set; get; }
 
-        [StringLength(255)]
-        public string Latitude { get; set; }
+        public double? Lng { set; get; }
 
         public Status Status { set; get; }
     }

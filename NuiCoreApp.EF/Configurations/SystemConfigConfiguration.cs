@@ -4,7 +4,7 @@ using NuiCoreApp.Data.Entities;
 
 namespace NuiCoreApp.Data.EF.Configurations
 {
-    internal class SystemConfigConfiguration : DbEntityConfiguration<SystemConfig>
+    class SystemConfigConfiguration : DbEntityConfiguration<SystemConfig>
     {
         public override void Configure(EntityTypeBuilder<SystemConfig> entity)
         {

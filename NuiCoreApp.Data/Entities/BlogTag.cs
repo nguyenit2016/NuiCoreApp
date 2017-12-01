@@ -7,6 +7,7 @@ namespace NuiCoreApp.Data.Entities
     public class BlogTag : DomainEntity<int>
     {
         public int BlogId { set; get; }
+
         public string TagId { set; get; }
 
         [ForeignKey("BlogId")]

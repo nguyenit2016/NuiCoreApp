@@ -4,9 +4,9 @@ using NuiCoreApp.Data.Entities;
 
 namespace NuiCoreApp.Data.EF.Configurations
 {
-    public class AdvertisementPositionConfiguration : DbEntityConfiguration<AdvertisementPosition>
+    public class AnnouncementConfiguration : DbEntityConfiguration<Announcement>
     {
-        public override void Configure(EntityTypeBuilder<AdvertisementPosition> entity)
+        public override void Configure(EntityTypeBuilder<Announcement> entity)
         {
             entity.Property(c => c.Id).HasMaxLength(20).IsRequired();
             // etc.

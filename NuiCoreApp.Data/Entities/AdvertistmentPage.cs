@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NuiCoreApp.Data.Entities
 {
-    [Table("AdvertisementPages")]
-    public class AdvertisementPage : DomainEntity<string>
+    [Table("AdvertistmentPages")]
+    public class AdvertistmentPage : DomainEntity<string>
     {
         public string Name { get; set; }
-        public virtual ICollection<AdvertisementPosition> AdvertisementPositions { get; set; }
+
+        public virtual ICollection<AdvertistmentPosition> AdvertistmentPositions { get; set; }
     }
 }
