@@ -16,7 +16,7 @@
             // arrow size in pixels
             arrowSize: 5,
             // position defines the notification position though uses the defaults below
-            position: '...',
+            position: 'top right',
             // default positions
             elementPosition: 'top right',
             globalPosition: 'top right',
@@ -137,3 +137,10 @@
         return roots;
     }
 }
+
+$(document).ajaxSend(function(e, xhr, options) {
+    if (options.type.toUpperCase() == "POST" || options.type.toUpperCase() == "PUT") {
+        var token = $('form').find("input[name='__RequestVerificationToken']").val();
+        xhr.setRequestHeader("RequestVerificationToken", token);
+    }
+});
