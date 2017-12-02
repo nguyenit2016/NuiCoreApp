@@ -2,7 +2,6 @@
 using NuiCoreApp.Data.Interfaces;
 using NuiCoreApp.Infrastructure.SharedKernel;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -27,18 +26,18 @@ namespace NuiCoreApp.Data.Entities
         public decimal Price { get; set; }
 
         public decimal? PromotionPrice { get; set; }
-        public decimal? OriginalPrice { get; set; }
+
+        [Required]
+        public decimal OriginalPrice { get; set; }
 
         [StringLength(255)]
         public string Description { get; set; }
 
         public string Content { get; set; }
 
-        [Required]
-        public bool HomeFlag { get; set; }
+        public bool? HomeFlag { get; set; }
 
-        [Required]
-        public bool HotFlag { get; set; }
+        public bool? HotFlag { get; set; }
 
         public int? ViewCount { get; set; }
 
@@ -49,28 +48,23 @@ namespace NuiCoreApp.Data.Entities
         public string Unit { get; set; }
 
         [ForeignKey("CategoryId")]
-        public virtual ProductCategory ProductCategory { get; set; }
+        public virtual ProductCategory ProductCategory { set; get; }
 
-        public virtual ICollection<ProductTag> ProductTags { get; set; }
+        public string SeoPageTitle { set; get; }
 
-        public virtual ICollection<BillDetail> BillDetails { get; set; }
-
-        public Status Status { get; set; }
+        [Column(TypeName = "varchar(255)")]
+        [StringLength(255)]
+        public string SeoAlias { set; get; }
 
         [StringLength(255)]
-        public string SeoPageTitle { get; set; }
-
-        [Column(TypeName = "varchar")]
-        [StringLength(255)]
-        public string SeoAlias { get; set; }
+        public string SeoKeyWord { set; get; }
 
         [StringLength(255)]
-        public string SeoKeyWord { get; set; }
+        public string SeoDescription { set; get; }
 
-        [StringLength(255)]
-        public string SeoDescription { get; set; }
+        public DateTime CreatedDate { set; get; }
+        public DateTime UpdatedDate { set; get; }
 
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public Status Status { set; get; }
     }
 }

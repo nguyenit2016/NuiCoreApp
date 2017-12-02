@@ -23,20 +23,19 @@ namespace NuiCoreApp.Data.Entities
             this.Status = Status.Active;
         }
 
+        [Required]
         [StringLength(128)]
-        [Required]
-        public string Name { get; set; }
+        public string Name { set; get; }
 
-        [StringLength(256)]
         [Required]
-        public string URL { get; set; }
+        [StringLength(250)]
+        public string URL { set; get; }
 
         [StringLength(128)]
         public string ParentId { set; get; }
 
         public string IconCss { get; set; }
-
-        public int SortOrder { get; set; }
-        public Status Status { get; set; }
+        public int SortOrder { set; get; }
+        public Status Status { set; get; }
     }
 }

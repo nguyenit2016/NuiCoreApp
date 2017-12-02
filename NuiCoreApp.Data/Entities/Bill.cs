@@ -17,7 +17,7 @@ namespace NuiCoreApp.Data.Entities
         }
 
         public Bill(string customerName, string customerAddress, string customerMobile, string customerMessage,
-             BillStatus billStatus, PaymentMethod paymentMethod, Status status, string customerId)
+            BillStatus billStatus, PaymentMethod paymentMethod, Status status, Guid customerId)
         {
             CustomerName = customerName;
             CustomerAddress = customerAddress;
@@ -30,7 +30,7 @@ namespace NuiCoreApp.Data.Entities
         }
 
         public Bill(int id, string customerName, string customerAddress, string customerMobile, string customerMessage,
-            BillStatus billStatus, PaymentMethod paymentMethod, Status status, string customerId)
+           BillStatus billStatus, PaymentMethod paymentMethod, Status status, Guid customerId)
         {
             Id = id;
             CustomerName = customerName;
@@ -43,43 +43,37 @@ namespace NuiCoreApp.Data.Entities
             CustomerId = customerId;
         }
 
-        [StringLength(256)]
         [Required]
-        public string CustomerName { get; set; }
+        [MaxLength(256)]
+        public string CustomerName { set; get; }
 
-        [StringLength(500)]
         [Required]
-        public string CustomerAddress { get; set; }
+        [MaxLength(256)]
+        public string CustomerAddress { set; get; }
 
-        [StringLength(50)]
         [Required]
-        public string CustomerMobile { get; set; }
+        [MaxLength(50)]
+        public string CustomerMobile { set; get; }
 
         [Required]
         [MaxLength(256)]
         public string CustomerMessage { set; get; }
 
         public PaymentMethod PaymentMethod { set; get; }
+
         public BillStatus BillStatus { set; get; }
 
-        [StringLength(255)]
-        [Column(TypeName = "varchar")]
-        public string CustomerEmail { get; set; }
+        public DateTime CreatedDate { set; get; }
+        public DateTime UpdatedDate { set; get; }
 
-        public DateTime BillDate { get; set; }
+        [DefaultValue(Status.Active)]
+        public Status Status { set; get; } = Status.Active;
 
-        [StringLength(450)]
-        public string CustomerId { set; get; }
+        public Guid CustomerId { set; get; }
 
         [ForeignKey("CustomerId")]
         public virtual AppUser User { set; get; }
 
-        [DefaultValue(Status.Active)]
-        public Status Status { get; set; } = Status.Active;
-
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
-
-        public virtual ICollection<BillDetail> BillDetails { get; set; }
+        public virtual ICollection<BillDetail> BillDetails { set; get; }
     }
 }

@@ -4,9 +4,9 @@ namespace NuiCoreApp.Data.EF
 {
     public class EFUnitOfWork : IUnitOfWork
     {
-        private readonly DbContext _context;
+        private readonly AppDbContext _context;
 
-        public EFUnitOfWork(DbContext context)
+        public EFUnitOfWork(AppDbContext context)
         {
             _context = context;
         }

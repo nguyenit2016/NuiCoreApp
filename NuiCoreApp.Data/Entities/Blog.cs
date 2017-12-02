@@ -9,12 +9,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace NuiCoreApp.Data.Entities
 {
     [Table("Blogs")]
-    public class Blog : DomainEntity<int>, ISwitchable, IHasSeoMetaData, IDateTracking
+    public class Blog : DomainEntity<int>, ISwitchable, IDateTracking, IHasSeoMetaData
     {
-        public Blog()
-        {
-        }
-
+        public Blog() { }
         public Blog(string name, string thumbnailImage,
            string description, string content, bool? homeFlag, bool? hotFlag,
            string tags, Status status, string seoPageTitle,
@@ -55,42 +52,40 @@ namespace NuiCoreApp.Data.Entities
             SeoKeyWord = seoMetaKeyword;
             SeoDescription = seoMetaDescription;
         }
-
-        [StringLength(256)]
         [Required]
-        public string Name { get; set; }
+        [MaxLength(256)]
+        public string Name { set; get; }
 
-        [StringLength(256)]
-        public string Image { get; set; }
 
-        [StringLength(500)]
-        public string Description { get; set; }
+        [MaxLength(256)]
+        public string Image { set; get; }
 
-        public string Content { get; set; }
+        [MaxLength(500)]
+        public string Description { set; get; }
+
+        public string Content { set; get; }
 
         public bool? HomeFlag { set; get; }
         public bool? HotFlag { set; get; }
         public int? ViewCount { set; get; }
 
         public string Tags { get; set; }
+
         public virtual ICollection<BlogTag> BlogTags { set; get; }
-
-        public Status Status { get; set; }
-
-        [MaxLength(256)]
-        public string SeoPageTitle { get; set; }
+        public DateTime CreatedDate { set; get; }
+        public DateTime UpdatedDate { set; get; }
+        public Status Status { set; get; }
 
         [MaxLength(256)]
-        [Column(TypeName = "varchar")]
-        public string SeoAlias { get; set; }
+        public string SeoPageTitle { set; get; }
 
         [MaxLength(256)]
-        public string SeoKeyWord { get; set; }
+        public string SeoAlias { set; get; }
 
         [MaxLength(256)]
-        public string SeoDescription { get; set; }
+        public string SeoKeyWord { set; get; }
 
-        public DateTime UpdatedDate { get; set; }
-        public DateTime CreatedDate { get; set; }
+        [MaxLength(256)]
+        public string SeoDescription { set; get; }
     }
 }

@@ -16,6 +16,6 @@ namespace NuiCoreApp.Data.Entities
         [StringLength(255)]
         public string Image { get; set; }
 
-        public Status Status { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+        public Status Status { get; set; }
     }
 }

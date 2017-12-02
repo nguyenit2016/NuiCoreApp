@@ -10,8 +10,8 @@ namespace NuiCoreApp.Data.Entities
     {
         public AppRole() : base()
         {
-        }
 
+        }
         public AppRole(string name, string description) : base(name)
         {
             this.Description = description;

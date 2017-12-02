@@ -11,7 +11,7 @@ namespace NuiCoreApp.Data.EF.Configurations
         {
             entity.HasKey(c => c.Id);
             entity.Property(c => c.Id).HasMaxLength(255)
-                 .HasColumnType("varchar(255)").IsRequired();
+                .HasColumnType("varchar(255)").IsRequired();
             // etc.
         }
     }
