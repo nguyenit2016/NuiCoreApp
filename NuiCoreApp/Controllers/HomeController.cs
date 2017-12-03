@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using NuiCoreApp.Models;
+using NuiCoreApp.Extensions;
 
 namespace NuiCoreApp.Controllers
 {
@@ -12,6 +13,7 @@ namespace NuiCoreApp.Controllers
     {
         public IActionResult Index()
         {
+            var email = User.GetSpecificClaim("Email");
             return View();
         }
 

@@ -22,6 +22,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 //using NuiCoreApp.Helpers;
 using NuiCoreApp.Infrastructure.Interfaces;
+using NuiCoreApp.Helpers;
 
 namespace NuiCoreApp
 {
@@ -74,6 +75,8 @@ namespace NuiCoreApp
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
+
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
