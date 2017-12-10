@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace NuiCoreApp.Data.EF.Migrations
 {
-    public partial class initial : Migration
+    public partial class initdb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -9,6 +9,7 @@ namespace NuiCoreApp.Application.AutoMapper
         public DomainToViewModelMapping()
         {
             CreateMap<ProductCategory, ProductCategoryViewModel>();
+            CreateMap<Function, FunctionViewModel>();
         }
     }
 }

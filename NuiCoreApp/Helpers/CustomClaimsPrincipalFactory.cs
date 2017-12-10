@@ -26,7 +26,7 @@ namespace NuiCoreApp.Helpers
                 new Claim ("Email", user.Email ?? string.Empty),
                 new Claim("FullName", user.FullName?? string.Empty),
                 new Claim("Avatar", user.Avatar?? string.Empty),
-                new Claim("Role", string.Join(";", roles))
+                new Claim("Roles", string.Join(";", roles))
             });
             return principal;
         }

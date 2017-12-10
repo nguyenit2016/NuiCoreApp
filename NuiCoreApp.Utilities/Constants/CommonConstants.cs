@@ -8,5 +8,6 @@ namespace NuiCoreApp.Utilities.Constants
     {
         public const string DefaultFooterId = "DefaultFooterId";
 
+        public const string AdminRole = "Admin";
     }
 }

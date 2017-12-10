@@ -12,8 +12,8 @@ using System;
 namespace NuiCoreApp.Data.EF.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20171130170236_initial")]
-    partial class initial
+    [Migration("20171208153820_initdb")]
+    partial class initdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
