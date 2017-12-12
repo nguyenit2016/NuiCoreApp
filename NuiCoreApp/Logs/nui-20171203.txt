@@ -1,0 +1,453 @@
+2017-12-03T19:22:23.1073671+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-03T19:22:29.5832408+07:00  [INF] Executed DbCommand ("348"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:22:29.7916031+07:00  [INF] Executed DbCommand ("105"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:22:29.9864377+07:00  [INF] Executed DbCommand ("143"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2017-12-03T19:22:30.3934445+07:00  [INF] Executed DbCommand ("324"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2017-12-03T19:22:30.4614005+07:00  [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2017-12-03T19:22:30.8684228+07:00  [INF] Executed DbCommand ("152"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2017-12-03T19:22:30.9513396+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2017-12-03T19:22:31.0168485+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2017-12-03T19:22:31.0958692+07:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2017-12-03T19:22:31.3419962+07:00  [INF] Executed DbCommand ("88"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:22:31.3710369+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:22:31.3885454+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:22:33.6843195+07:00 0HL9Q923NE29H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/   (ca22a1cb)
+2017-12-03T19:22:35.0632487+07:00 0HL9Q923NE29H:00000001 [INF] Executing action method "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:22:59.1970814+07:00 0HL9Q923NE29H:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-03T19:23:00.4079503+07:00 0HL9Q923NE29H:00000001 [INF] Executed action "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" in 25335.7937ms (afa2e885)
+2017-12-03T19:23:00.4586691+07:00 0HL9Q923NE29H:00000001 [INF] Request finished in 27007.6449ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:23:00.8075613+07:00 0HL9Q923NE29K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/css/site.css   (ca22a1cb)
+2017-12-03T19:23:00.8269982+07:00 0HL9Q923NE29M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/images/banner2.svg   (ca22a1cb)
+2017-12-03T19:23:01.1775973+07:00 0HL9Q923NE29H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2017-12-03T19:23:01.1779543+07:00 0HL9Q923NE29O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/images/banner1.svg   (ca22a1cb)
+2017-12-03T19:23:01.1914667+07:00 0HL9Q923NE29M:00000001 [INF] The file "/images/banner2.svg" was not modified (f1f8d725)
+2017-12-03T19:23:01.1957248+07:00 0HL9Q923NE29J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2017-12-03T19:23:01.2124338+07:00 0HL9Q923NE29H:00000002 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2017-12-03T19:23:01.2451887+07:00 0HL9Q923NE29M:00000001 [INF] Request finished in 429.6567ms 304 image/svg+xml (791a596a)
+2017-12-03T19:23:01.2535511+07:00 0HL9Q923NE29K:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2017-12-03T19:23:01.2605116+07:00 0HL9Q923NE29O:00000001 [INF] The file "/images/banner1.svg" was not modified (f1f8d725)
+2017-12-03T19:23:01.2589920+07:00 0HL9Q923NE29J:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2017-12-03T19:23:01.2753466+07:00 0HL9Q923NE29H:00000002 [INF] Request finished in 450.016ms 304 text/css (791a596a)
+2017-12-03T19:23:01.3103740+07:00 0HL9Q923NE29L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/jquery/dist/jquery.js   (ca22a1cb)
+2017-12-03T19:23:01.3123995+07:00 0HL9Q923NE29O:00000001 [INF] Request finished in 477.276ms 304 image/svg+xml (791a596a)
+2017-12-03T19:23:01.3203539+07:00 0HL9Q923NE29J:00000001 [INF] Request finished in 485.6671ms 304 application/javascript (791a596a)
+2017-12-03T19:23:01.3418516+07:00 0HL9Q923NE29K:00000001 [INF] Request finished in 474.0481ms 304 text/css (791a596a)
+2017-12-03T19:23:01.3475698+07:00 0HL9Q923NE29L:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2017-12-03T19:23:01.3564802+07:00 0HL9Q923NE29Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/images/banner4.svg   (ca22a1cb)
+2017-12-03T19:23:01.3767899+07:00 0HL9Q923NE29N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/images/banner3.svg   (ca22a1cb)
+2017-12-03T19:23:01.3937890+07:00 0HL9Q923NE29L:00000001 [INF] Request finished in 73.7167ms 304 application/javascript (791a596a)
+2017-12-03T19:23:01.4324635+07:00 0HL9Q923NE29P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2017-12-03T19:23:01.5268661+07:00 0HL9Q923NE29Q:00000001 [INF] The file "/images/banner4.svg" was not modified (f1f8d725)
+2017-12-03T19:23:01.5643245+07:00 0HL9Q923NE29N:00000001 [INF] The file "/images/banner3.svg" was not modified (f1f8d725)
+2017-12-03T19:23:01.5825166+07:00 0HL9Q923NE29N:00000001 [INF] Request finished in 237.069ms 304 image/svg+xml (791a596a)
+2017-12-03T19:23:01.6051695+07:00 0HL9Q923NE29P:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2017-12-03T19:23:01.6405474+07:00 0HL9Q923NE29Q:00000001 [INF] Request finished in 193.3158ms 304 image/svg+xml (791a596a)
+2017-12-03T19:23:01.6468342+07:00 0HL9Q923NE29P:00000001 [INF] Request finished in 277.569ms 304 application/javascript (791a596a)
+2017-12-03T19:23:01.7892005+07:00 0HL9Q923NE29M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2017-12-03T19:23:01.7949355+07:00 0HL9Q923NE29M:00000002 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2017-12-03T19:23:01.8023540+07:00 0HL9Q923NE29M:00000002 [INF] Request finished in 10.8622ms 304 font/woff2 (791a596a)
+2017-12-03T19:23:06.1737128+07:00 0HL9Q923NE29H:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/Login/Index   (ca22a1cb)
+2017-12-03T19:23:06.1968875+07:00 0HL9Q923NE29H:00000003 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.LoginController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:23:06.7731417+07:00 0HL9Q923NE29H:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2017-12-03T19:23:06.9217686+07:00 0HL9Q923NE29H:00000003 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.LoginController.Index (NuiCoreApp)" in 730.2039ms (afa2e885)
+2017-12-03T19:23:06.9669708+07:00 0HL9Q923NE29K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/font-awesome/css/font-awesome.min.css   (ca22a1cb)
+2017-12-03T19:23:06.9699072+07:00 0HL9Q923NE29H:00000003 [INF] Request finished in 757.6197ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:23:07.0498765+07:00 0HL9Q923NE29O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2017-12-03T19:23:07.0530290+07:00 0HL9Q923NE29H:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/animate.css/animate.min.css   (ca22a1cb)
+2017-12-03T19:23:07.0610007+07:00 0HL9Q923NE29K:00000002 [INF] The file "/lib/gentelella/vendors/font-awesome/css/font-awesome.min.css" was not modified (f1f8d725)
+2017-12-03T19:23:07.0949382+07:00 0HL9Q923NE29J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/nprogress/nprogress.css   (ca22a1cb)
+2017-12-03T19:23:07.0972355+07:00 0HL9Q923NE29H:00000004 [INF] The file "/lib/gentelella/vendors/animate.css/animate.min.css" was not modified (f1f8d725)
+2017-12-03T19:23:07.1172110+07:00 0HL9Q923NE29O:00000002 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2017-12-03T19:23:07.1299318+07:00 0HL9Q923NE29J:00000002 [INF] The file "/lib/gentelella/vendors/nprogress/nprogress.css" was not modified (f1f8d725)
+2017-12-03T19:23:07.1508960+07:00 0HL9Q923NE29K:00000002 [INF] Request finished in 119.9599ms 304 text/css (791a596a)
+2017-12-03T19:23:07.1543645+07:00 0HL9Q923NE29H:00000004 [INF] Request finished in 63.6678ms 304 text/css (791a596a)
+2017-12-03T19:23:07.1721718+07:00 0HL9Q923NE29J:00000002 [INF] Request finished in 112.3401ms 304 text/css (791a596a)
+2017-12-03T19:23:07.1758856+07:00 0HL9Q923NE29O:00000002 [INF] Request finished in 100.3522ms 304 application/javascript (791a596a)
+2017-12-03T19:23:07.2051245+07:00 0HL9Q923NE29K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2017-12-03T19:23:07.2413440+07:00 0HL9Q923NE29N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2017-12-03T19:23:07.2643367+07:00 0HL9Q923NE29L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/bootbox/bootbox.js   (ca22a1cb)
+2017-12-03T19:23:07.2849135+07:00 0HL9Q923NE29N:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2017-12-03T19:23:07.2899466+07:00 0HL9Q923NE29Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2017-12-03T19:23:07.3094105+07:00 0HL9Q923NE29K:00000003 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2017-12-03T19:23:07.3250600+07:00 0HL9Q923NE29L:00000002 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2017-12-03T19:23:07.3460858+07:00 0HL9Q923NE29L:00000002 [INF] Request finished in 164.93ms 304 application/javascript (791a596a)
+2017-12-03T19:23:07.3691577+07:00 0HL9Q923NE29K:00000003 [INF] Request finished in 151.2101ms 304 application/javascript (791a596a)
+2017-12-03T19:23:07.3741848+07:00 0HL9Q923NE29Q:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2017-12-03T19:23:07.4034292+07:00 0HL9Q923NE29P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2017-12-03T19:23:07.4501749+07:00 0HL9Q923NE29P:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2017-12-03T19:23:07.4652008+07:00 0HL9Q923NE29M:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2017-12-03T19:23:07.4728638+07:00 0HL9Q923NE29M:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2017-12-03T19:23:07.6671080+07:00 0HL9Q923NE29Q:00000002 [INF] Request finished in 371.8467ms 200 application/javascript (791a596a)
+2017-12-03T19:23:07.7069227+07:00 0HL9Q923NE29N:00000002 [INF] Request finished in 350.8611ms 200 application/javascript (791a596a)
+2017-12-03T19:23:07.7400229+07:00 0HL9Q923NE29R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/build/css/custom.min.css   (ca22a1cb)
+2017-12-03T19:23:07.7462687+07:00 0HL9Q923NE29P:00000002 [INF] Request finished in 188.5593ms 200 application/javascript (791a596a)
+2017-12-03T19:23:07.7774675+07:00 0HL9Q923NE29R:00000001 [INF] The file "/lib/gentelella/build/css/custom.min.css" was not modified (f1f8d725)
+2017-12-03T19:23:07.7930662+07:00 0HL9Q923NE29S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2017-12-03T19:23:07.8085642+07:00 0HL9Q923NE29M:00000003 [INF] Request finished in 249.3292ms 200 application/javascript (791a596a)
+2017-12-03T19:23:07.8298370+07:00 0HL9Q923NE29R:00000001 [INF] Request finished in 57.3052ms 304 text/css (791a596a)
+2017-12-03T19:23:07.8569519+07:00 0HL9Q923NE29T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/app/shared/nui.js   (ca22a1cb)
+2017-12-03T19:23:07.8758447+07:00 0HL9Q923NE29S:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2017-12-03T19:23:07.9105031+07:00 0HL9Q923NE29U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/app/controllers/login/index.js   (ca22a1cb)
+2017-12-03T19:23:07.9343832+07:00 0HL9Q923NE29T:00000001 [INF] The file "/app/shared/nui.js" was not modified (f1f8d725)
+2017-12-03T19:23:07.9472988+07:00 0HL9Q923NE29U:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2017-12-03T19:23:07.9584868+07:00 0HL9Q923NE29T:00000001 [INF] Request finished in 165.3063ms 304 application/javascript (791a596a)
+2017-12-03T19:23:07.9744813+07:00 0HL9Q923NE29S:00000001 [INF] Request finished in 206.9363ms 304 text/css (791a596a)
+2017-12-03T19:23:08.2112280+07:00 0HL9Q923NE29U:00000001 [INF] Request finished in 184.932ms 200 application/javascript (791a596a)
+2017-12-03T19:23:08.3048607+07:00 0HL9Q923NE29H:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3   (ca22a1cb)
+2017-12-03T19:23:08.3180326+07:00 0HL9Q923NE29H:00000005 [INF] The file "/lib/gentelella/vendors/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2017-12-03T19:23:08.3438907+07:00 0HL9Q923NE29H:00000005 [INF] Request finished in 108.5553ms 304 font/woff2 (791a596a)
+2017-12-03T19:23:09.6357708+07:00 0HL9Q923NE29O:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44373/Admin/Login/Auth application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2017-12-03T19:23:09.9710672+07:00 0HL9Q923NE29O:00000003 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.LoginController.Auth (NuiCoreApp)" with arguments (["NuiCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:23:10.0914962+07:00 0HL9Q923NE29O:00000003 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-03T19:23:10.9244490+07:00 0HL9Q923NE29O:00000003 [INF] Executed DbCommand ("679"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2017-12-03T19:23:11.4058537+07:00 0HL9Q923NE29O:00000003 [INF] Executed DbCommand ("186"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2017-12-03T19:23:11.6684568+07:00 0HL9Q923NE29O:00000003 [INF] Executed DbCommand ("104"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2017-12-03T19:23:11.7182965+07:00 0HL9Q923NE29O:00000003 [INF] Executed DbCommand ("17"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2017-12-03T19:23:11.8318506+07:00 0HL9Q923NE29O:00000003 [INF] Executed DbCommand ("64"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2017-12-03T19:23:11.8551365+07:00 0HL9Q923NE29O:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-12-03T19:23:11.8649268+07:00 0HL9Q923NE29O:00000003 [INF] User logged in. (fdce0db4)
+2017-12-03T19:23:11.8765378+07:00 0HL9Q923NE29O:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-03T19:23:12.0213627+07:00 0HL9Q923NE29O:00000003 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.LoginController.Auth (NuiCoreApp)" in 2262.4999ms (afa2e885)
+2017-12-03T19:23:12.0478671+07:00 0HL9Q923NE29O:00000003 [INF] Request finished in 2395.327ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-03T19:23:12.0970262+07:00 0HL9Q923NE29J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/Home/Index   (ca22a1cb)
+2017-12-03T19:23:12.1129612+07:00 0HL9Q923NE29J:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-03T19:23:12.1520946+07:00 0HL9Q923NE29J:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-03T19:23:12.1588954+07:00 0HL9Q923NE29J:00000003 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:23:12.5196556+07:00 0HL9Q923NE29J:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2017-12-03T19:23:13.1031940+07:00 0HL9Q923NE29J:00000003 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" in 974.9376ms (afa2e885)
+2017-12-03T19:23:13.1104431+07:00 0HL9Q923NE29J:00000003 [INF] Request finished in 1045.673ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:23:13.2362064+07:00 0HL9Q923NE29K:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css   (ca22a1cb)
+2017-12-03T19:23:13.2428742+07:00 0HL9Q923NE29K:00000004 [INF] The file "/lib/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" was not modified (f1f8d725)
+2017-12-03T19:23:13.2587742+07:00 0HL9Q923NE29K:00000004 [INF] Request finished in 17.889ms 304 text/css (791a596a)
+2017-12-03T19:23:13.4649774+07:00 0HL9Q923NE29Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/jquery-sparkline/dist/jquery.sparkline.min.js   (ca22a1cb)
+2017-12-03T19:23:13.5236597+07:00 0HL9Q923NE29M:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js   (ca22a1cb)
+2017-12-03T19:23:13.6386443+07:00 0HL9Q923NE29L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2017-12-03T19:23:13.6560673+07:00 0HL9Q923NE29N:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/Flot/jquery.flot.pie.js   (ca22a1cb)
+2017-12-03T19:23:13.6797505+07:00 0HL9Q923NE29H:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/Flot/jquery.flot.stack.js   (ca22a1cb)
+2017-12-03T19:23:13.6862350+07:00 0HL9Q923NE29S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/jquery/dist/jquery.min.js   (ca22a1cb)
+2017-12-03T19:23:13.7035458+07:00 0HL9Q923NE29Q:00000003 [INF] The file "/lib/gentelella/vendors/jquery-sparkline/dist/jquery.sparkline.min.js" was not modified (f1f8d725)
+2017-12-03T19:23:13.7201734+07:00 0HL9Q923NE29M:00000004 [INF] The file "/lib/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js" was not modified (f1f8d725)
+2017-12-03T19:23:13.7432745+07:00 0HL9Q923NE29T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/Flot/jquery.flot.js   (ca22a1cb)
+2017-12-03T19:23:13.7600446+07:00 0HL9Q923NE29P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/fastclick/lib/fastclick.js   (ca22a1cb)
+2017-12-03T19:23:13.7789919+07:00 0HL9Q923NE29S:00000002 [INF] The file "/lib/gentelella/vendors/jquery/dist/jquery.min.js" was not modified (f1f8d725)
+2017-12-03T19:23:13.8480810+07:00 0HL9Q923NE29N:00000003 [INF] The file "/lib/gentelella/vendors/Flot/jquery.flot.pie.js" was not modified (f1f8d725)
+2017-12-03T19:23:13.8599791+07:00 0HL9Q923NE29H:00000006 [INF] The file "/lib/gentelella/vendors/Flot/jquery.flot.stack.js" was not modified (f1f8d725)
+2017-12-03T19:23:13.8689402+07:00 0HL9Q923NE29Q:00000003 [INF] Request finished in 414.0611ms 304 application/javascript (791a596a)
+2017-12-03T19:23:13.8765776+07:00 0HL9Q923NE29M:00000004 [INF] Request finished in 428.4979ms 304 application/javascript (791a596a)
+2017-12-03T19:23:13.8811196+07:00 0HL9Q923NE29L:00000003 [INF] The file "/lib/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2017-12-03T19:23:14.0236926+07:00 0HL9Q923NE29S:00000002 [INF] Request finished in 392.8649ms 304 application/javascript (791a596a)
+2017-12-03T19:23:14.0648690+07:00 0HL9Q923NE29T:00000002 [INF] The file "/lib/gentelella/vendors/Flot/jquery.flot.js" was not modified (f1f8d725)
+2017-12-03T19:23:14.1678335+07:00 0HL9Q923NE29H:00000006 [INF] Request finished in 471.3176ms 304 application/javascript (791a596a)
+2017-12-03T19:23:14.1798776+07:00 0HL9Q923NE29P:00000003 [INF] The file "/lib/gentelella/vendors/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2017-12-03T19:23:14.1982217+07:00 0HL9Q923NE29N:00000003 [INF] Request finished in 558.821ms 304 application/javascript (791a596a)
+2017-12-03T19:23:14.2164323+07:00 0HL9Q923NE2A4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/DateJS/build/date.js   (ca22a1cb)
+2017-12-03T19:23:14.2289741+07:00 0HL9Q923NE2A1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2017-12-03T19:23:14.2929591+07:00 0HL9Q923NE29O:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44373/admin-side/images/img.jpg   (ca22a1cb)
+2017-12-03T19:23:14.3291230+07:00 0HL9Q923NE29L:00000003 [INF] Request finished in 593.9151ms 304 text/css (791a596a)
+2017-12-03T19:23:14.3466072+07:00 0HL9Q923NE2A4:00000001 [INF] The file "/lib/gentelella/vendors/DateJS/build/date.js" was not modified (f1f8d725)
+2017-12-03T19:23:14.3639381+07:00 0HL9Q923NE2A1:00000001 [INF] The file "/lib/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2017-12-03T19:23:14.4005582+07:00 0HL9Q923NE2A3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/moment/min/moment.min.js   (ca22a1cb)
+2017-12-03T19:23:14.4160653+07:00 0HL9Q923NE29T:00000002 [INF] Request finished in 679.4247ms 304 application/javascript (791a596a)
+2017-12-03T19:23:14.5388683+07:00 0HL9Q923NE29O:00000004 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2017-12-03T19:23:14.5608743+07:00 0HL9Q923NE2A4:00000001 [INF] Request finished in 368.7973ms 304 application/javascript (791a596a)
+2017-12-03T19:23:14.5876280+07:00 0HL9Q923NE2A1:00000001 [INF] Request finished in 365.6451ms 304 application/javascript (791a596a)
+2017-12-03T19:23:14.5879092+07:00 0HL9Q923NE29P:00000003 [INF] Request finished in 890.4935ms 304 application/javascript (791a596a)
+2017-12-03T19:23:14.5986978+07:00 0HL9Q923NE2A3:00000001 [INF] The file "/lib/gentelella/vendors/moment/min/moment.min.js" was not modified (f1f8d725)
+2017-12-03T19:23:14.6787719+07:00 0HL9Q923NE2A5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/build/js/custom.min.js   (ca22a1cb)
+2017-12-03T19:23:14.8149130+07:00 0HL9Q923NE29U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/Flot/jquery.flot.time.js   (ca22a1cb)
+2017-12-03T19:23:14.8760112+07:00 0HL9Q923NE29Q:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2017-12-03T19:23:14.8927784+07:00 0HL9Q923NE2A3:00000001 [INF] Request finished in 436.0963ms 304 application/javascript (791a596a)
+2017-12-03T19:23:14.9287852+07:00 0HL9Q923NE29O:00000004 [INF] Request finished in 1085.9337ms 304 image/jpeg (791a596a)
+2017-12-03T19:23:14.9488805+07:00 0HL9Q923NE29R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/Chart.js/dist/Chart.min.js   (ca22a1cb)
+2017-12-03T19:23:14.9664305+07:00 0HL9Q923NE29U:00000002 [INF] The file "/lib/gentelella/vendors/Flot/jquery.flot.time.js" was not modified (f1f8d725)
+2017-12-03T19:23:14.9997539+07:00 0HL9Q923NE29K:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/flot.orderbars/js/jquery.flot.orderBars.js   (ca22a1cb)
+2017-12-03T19:23:15.0051798+07:00 0HL9Q923NE2A5:00000001 [INF] The file "/lib/gentelella/build/js/custom.min.js" was not modified (f1f8d725)
+2017-12-03T19:23:15.0296155+07:00 0HL9Q923NE29R:00000002 [INF] The file "/lib/gentelella/vendors/Chart.js/dist/Chart.min.js" was not modified (f1f8d725)
+2017-12-03T19:23:15.0483847+07:00 0HL9Q923NE29U:00000002 [INF] Request finished in 1513.4865ms 304 application/javascript (791a596a)
+2017-12-03T19:23:15.0548637+07:00 0HL9Q923NE29J:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/nprogress/nprogress.js   (ca22a1cb)
+2017-12-03T19:23:15.0710803+07:00 0HL9Q923NE29K:00000005 [INF] The file "/lib/gentelella/vendors/flot.orderbars/js/jquery.flot.orderBars.js" was not modified (f1f8d725)
+2017-12-03T19:23:15.0838692+07:00 0HL9Q923NE29Q:00000004 [INF] The file "/lib/gentelella/vendors/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2017-12-03T19:23:15.0987586+07:00 0HL9Q923NE29R:00000002 [INF] Request finished in 1574.6118ms 304 application/javascript (791a596a)
+2017-12-03T19:23:15.1624680+07:00 0HL9Q923NE2A0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2017-12-03T19:23:15.1736802+07:00 0HL9Q923NE29K:00000005 [INF] Request finished in 1618.588ms 304 application/javascript (791a596a)
+2017-12-03T19:23:15.1767165+07:00 0HL9Q923NE29J:00000004 [INF] The file "/lib/gentelella/vendors/nprogress/nprogress.js" was not modified (f1f8d725)
+2017-12-03T19:23:15.2358140+07:00 0HL9Q923NE2A5:00000001 [INF] Request finished in 676.1ms 304 application/javascript (791a596a)
+2017-12-03T19:23:15.2488528+07:00 0HL9Q923NE2A0:00000001 [INF] The file "/lib/gentelella/vendors/flot.curvedlines/curvedLines.js" was not modified (f1f8d725)
+2017-12-03T19:23:15.2730771+07:00 0HL9Q923NE2A2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/flot-spline/js/jquery.flot.spline.min.js   (ca22a1cb)
+2017-12-03T19:23:15.2886037+07:00 0HL9Q923NE29J:00000004 [INF] Request finished in 1794.3648ms 304 application/javascript (791a596a)
+2017-12-03T19:23:15.3142748+07:00 0HL9Q923NE29V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/lib/gentelella/vendors/Flot/jquery.flot.resize.js   (ca22a1cb)
+2017-12-03T19:23:15.3550783+07:00 0HL9Q923NE29Q:00000004 [INF] Request finished in 650.5051ms 304 font/woff2 (791a596a)
+2017-12-03T19:23:15.3979459+07:00 0HL9Q923NE2A0:00000001 [INF] Request finished in 1727.9472ms 304 application/javascript (791a596a)
+2017-12-03T19:23:15.3996118+07:00 0HL9Q923NE2A2:00000001 [INF] The file "/lib/gentelella/vendors/flot-spline/js/jquery.flot.spline.min.js" was not modified (f1f8d725)
+2017-12-03T19:23:15.4225626+07:00 0HL9Q923NE29V:00000001 [INF] The file "/lib/gentelella/vendors/Flot/jquery.flot.resize.js" was not modified (f1f8d725)
+2017-12-03T19:23:15.4799240+07:00 0HL9Q923NE29V:00000001 [INF] Request finished in 1905.9833ms 304 application/javascript (791a596a)
+2017-12-03T19:23:15.4905139+07:00 0HL9Q923NE2A2:00000001 [INF] Request finished in 1794.6221ms 304 application/javascript (791a596a)
+2017-12-03T19:23:16.3800593+07:00 0HL9Q923NE29M:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44373/   (ca22a1cb)
+2017-12-03T19:23:16.3915808+07:00 0HL9Q923NE29M:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-03T19:23:16.4004098+07:00 0HL9Q923NE29M:00000005 [INF] Executing action method "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:23:24.7071731+07:00 0HL9Q923NE29M:00000005 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-03T19:23:24.7395432+07:00 0HL9Q923NE29M:00000005 [INF] Executed action "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" in 8331.4503ms (afa2e885)
+2017-12-03T19:23:24.7594804+07:00 0HL9Q923NE29M:00000005 [INF] Request finished in 8373.4956ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:28:17.4599687+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-03T19:28:18.5641233+07:00  [INF] Executed DbCommand ("76"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:28:18.6187613+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:28:18.6631631+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2017-12-03T19:28:18.6983484+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2017-12-03T19:28:18.7106587+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2017-12-03T19:28:18.7769406+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2017-12-03T19:28:18.8338860+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2017-12-03T19:28:18.8568308+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2017-12-03T19:28:18.9009336+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2017-12-03T19:28:18.9916286+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:28:19.0091269+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:28:19.0259617+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:28:19.6198936+07:00 0HL9Q95B0A2N1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/   (ca22a1cb)
+2017-12-03T19:28:19.9894404+07:00 0HL9Q95B0A2N1:00000001 [INF] Executing action method "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:30:00.2998358+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-03T19:30:01.3128798+07:00  [INF] Executed DbCommand ("143"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:30:01.3465768+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:30:01.3856283+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2017-12-03T19:30:01.4337942+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2017-12-03T19:30:01.4480492+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2017-12-03T19:30:01.5187336+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2017-12-03T19:30:01.5836698+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2017-12-03T19:30:01.6390056+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2017-12-03T19:30:01.7676862+07:00  [INF] Executed DbCommand ("90"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2017-12-03T19:30:01.8402806+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:30:01.8575066+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:30:01.8682627+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-03T19:30:02.2151383+07:00 0HL9Q969K5UH5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/   (ca22a1cb)
+2017-12-03T19:30:02.4914852+07:00 0HL9Q969K5UH5:00000001 [INF] Executing action method "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:30:12.9459783+07:00  [WRN] Heartbeat took longer than "00:00:01" at "12/03/2017 12:30:10 +00:00". (439152bf)
+2017-12-03T19:30:18.6860719+07:00 0HL9Q969K5UH5:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-03T19:30:20.4379091+07:00 0HL9Q969K5UH5:00000001 [INF] Executed action "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" in 17931.1112ms (afa2e885)
+2017-12-03T19:30:20.4621765+07:00 0HL9Q969K5UH5:00000001 [INF] Request finished in 18255.3446ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:30:23.5873891+07:00 0HL9Q969K5UH5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/Login/Index   (ca22a1cb)
+2017-12-03T19:30:23.6105406+07:00 0HL9Q969K5UH5:00000002 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.LoginController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:30:24.0810766+07:00 0HL9Q969K5UH5:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2017-12-03T19:30:24.1776770+07:00 0HL9Q969K5UH5:00000002 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.LoginController.Index (NuiCoreApp)" in 568.7663ms (afa2e885)
+2017-12-03T19:30:24.2508172+07:00 0HL9Q969K5UH5:00000002 [INF] Request finished in 599.0427ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:30:25.6501845+07:00 0HL9Q969K5UH5:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44373/Admin/Login/Auth application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2017-12-03T19:30:25.7998371+07:00 0HL9Q969K5UH5:00000003 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.LoginController.Auth (NuiCoreApp)" with arguments (["NuiCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:30:25.8289890+07:00 0HL9Q969K5UH5:00000003 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-03T19:30:25.9594075+07:00 0HL9Q969K5UH5:00000003 [INF] Executed DbCommand ("55"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2017-12-03T19:30:26.1650614+07:00 0HL9Q969K5UH5:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2017-12-03T19:30:26.2446117+07:00 0HL9Q969K5UH5:00000003 [INF] Executed DbCommand ("16"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2017-12-03T19:30:26.2847753+07:00 0HL9Q969K5UH5:00000003 [INF] Executed DbCommand ("16"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2017-12-03T19:30:26.3182343+07:00 0HL9Q969K5UH5:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2017-12-03T19:30:26.3438480+07:00 0HL9Q969K5UH5:00000003 [INF] Executed DbCommand ("14"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2017-12-03T19:30:26.3592248+07:00 0HL9Q969K5UH5:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-12-03T19:30:26.3655459+07:00 0HL9Q969K5UH5:00000003 [INF] User logged in. (fdce0db4)
+2017-12-03T19:30:26.3773100+07:00 0HL9Q969K5UH5:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-03T19:30:26.4457553+07:00 0HL9Q969K5UH5:00000003 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.LoginController.Auth (NuiCoreApp)" in 709.5419ms (afa2e885)
+2017-12-03T19:30:26.4578250+07:00 0HL9Q969K5UH5:00000003 [INF] Request finished in 812.7817ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-03T19:30:26.4688293+07:00 0HL9Q969K5UH5:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/Home/Index   (ca22a1cb)
+2017-12-03T19:30:26.4831695+07:00 0HL9Q969K5UH5:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-03T19:30:26.5118797+07:00 0HL9Q969K5UH5:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-03T19:30:26.5235668+07:00 0HL9Q969K5UH5:00000004 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:30:26.8235185+07:00 0HL9Q969K5UH5:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2017-12-03T19:30:27.2578226+07:00 0HL9Q969K5UH5:00000004 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" in 754.3096ms (afa2e885)
+2017-12-03T19:30:27.3635537+07:00 0HL9Q969K5UH5:00000004 [INF] Request finished in 795.4362ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:30:30.8038611+07:00 0HL9Q969K5UH5:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44373/   (ca22a1cb)
+2017-12-03T19:30:30.8102833+07:00 0HL9Q969K5UH5:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-03T19:30:30.8168820+07:00 0HL9Q969K5UH5:00000005 [INF] Executing action method "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:30:35.8771216+07:00 0HL9Q969K5UH5:00000005 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-03T19:30:35.9043932+07:00 0HL9Q969K5UH5:00000005 [INF] Executed action "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" in 5077.0534ms (afa2e885)
+2017-12-03T19:30:35.9161012+07:00 0HL9Q969K5UH5:00000005 [INF] Request finished in 5109.0754ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:34:49.9824071+07:00 0HL9Q969K5UH7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin   (ca22a1cb)
+2017-12-03T19:34:49.9894383+07:00 0HL9Q969K5UH7:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-03T19:34:50.0010435+07:00 0HL9Q969K5UH7:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-03T19:34:50.0114542+07:00 0HL9Q969K5UH7:00000001 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:34:50.0183621+07:00 0HL9Q969K5UH7:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2017-12-03T19:34:50.7787928+07:00 0HL9Q969K5UH7:00000001 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" in 733.6347ms (afa2e885)
+2017-12-03T19:34:50.8067347+07:00 0HL9Q969K5UH7:00000001 [INF] Request finished in 823.316ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:36:48.2685946+07:00 0HL9Q969K5UH8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin   (ca22a1cb)
+2017-12-03T19:36:48.2756128+07:00 0HL9Q969K5UH8:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-03T19:36:48.2836204+07:00 0HL9Q969K5UH8:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-03T19:36:48.2889055+07:00 0HL9Q969K5UH8:00000001 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-03T19:36:48.2943495+07:00 0HL9Q969K5UH8:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2017-12-03T19:36:48.7935067+07:00 0HL9Q969K5UH8:00000001 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" in 496.8431ms (afa2e885)
+2017-12-03T19:36:48.8023942+07:00 0HL9Q969K5UH8:00000001 [INF] Request finished in 534.6412ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-03T19:36:49.7200685+07:00 0HL9Q969K5UH8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/favicon.ico   (ca22a1cb)
+2017-12-03T19:36:49.7802705+07:00 0HL9Q969K5UH8:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2017-12-03T19:36:50.2539462+07:00 0HL9Q969K5UH8:00000002 [INF] Request finished in 190.3468ms 200 image/x-icon (791a596a)

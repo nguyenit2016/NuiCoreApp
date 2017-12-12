@@ -22,6 +22,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 //using NuiCoreApp.Helpers;
 using NuiCoreApp.Infrastructure.Interfaces;
+using NuiCoreApp.Helpers;
 
 namespace NuiCoreApp
 {
@@ -75,10 +76,15 @@ namespace NuiCoreApp
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
 
-            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-            services.AddTransient<IProductCategoryService, ProductCategoryService>();
-
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
             services.AddMvc().AddJsonOptions(option => option.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            //Repository
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IFunctionRepository, FunctionRepository>();
+            //Service
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IFunctionService, FunctionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
