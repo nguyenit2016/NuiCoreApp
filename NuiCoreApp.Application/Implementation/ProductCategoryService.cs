@@ -34,6 +34,11 @@ namespace NuiCoreApp.Application.Implementation
             _productCategoryRepository.Remove(id);
         }
 
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
+        }
+
         public List<ProductCategoryViewModel> GetAll()
         {
             return _productCategoryRepository.FindAll().OrderBy(x => x.Id)

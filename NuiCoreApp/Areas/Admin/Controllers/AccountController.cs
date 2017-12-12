@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace NuiCoreApp.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class AccountController : Controller
+    public class AccountController : AdminBaseController
     {
         private readonly SignInManager<AppUser> _signInManager;
 

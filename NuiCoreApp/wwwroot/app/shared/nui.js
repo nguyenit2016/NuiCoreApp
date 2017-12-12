@@ -75,7 +75,7 @@
             mm = "0" + mm;
         return day + "/" + month + "/" + year;
     },
-    dateTimeFomatJson: function (datetime) {
+    dateTimeFormatJson: function (datetime) {
         if (datetime == null || datetime == '')
             return '';
         var newdate = new Date(parseInt(datetime.substr(6)));
@@ -84,7 +84,6 @@
         var year = newdate.getFullYear();
         var hh = newdate.getHours();
         var mm = newdate.getMinutes();
-        var ss = newdate.getSeconds();
         if (month < 10)
             month = "0" + month;
         if (day < 10)
@@ -93,9 +92,7 @@
             hh = "0" + hh;
         if (mm < 10)
             mm = "0" + mm;
-        if (ss < 10)
-            ss = "0" + ss;
-        return day + "/" + month + "/" + year + " " + hh + ":" + mm + ":" + ss;
+        return day + "/" + month + "/" + year;
     },
     startLoading: function () {
         if ($('.dv-loading').length > 0)
