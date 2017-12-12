@@ -1,0 +1,29 @@
+﻿var productCategoryController = function () {
+    this.initialize = function () {
+        loadData();
+    }
+
+    function loadData() {
+        $.ajax({
+            url: "/Admin/ProductCategory/GetAll",
+            dataType: 'json',
+            success: function (response) {
+                var data = [];
+                $.each(response, function (i, item) {
+                    data.push({
+                        id: item.Id,
+                        text: item.Name,
+                        parentId: item.ParentId,
+                        sortOrder: item.SortOrder
+                    });
+                });
+                var treeArray = nui.unflattern(data);
+                //var $tree = $("#treeProductCategory");
+                $("#treeProductCategory").tree({
+                    data: treeArray,
+                    dnd: true//Cho phép kéo thả
+                });
+            }
+        });
+    }
+}
