@@ -16,7 +16,7 @@
             // arrow size in pixels
             arrowSize: 5,
             // position defines the notification position though uses the defaults below
-            position: 'top right',
+            position: '...',
             // default positions
             elementPosition: 'top right',
             globalPosition: 'top right',
@@ -84,6 +84,7 @@
         var year = newdate.getFullYear();
         var hh = newdate.getHours();
         var mm = newdate.getMinutes();
+        var ss = newdate.getSeconds();
         if (month < 10)
             month = "0" + month;
         if (day < 10)
@@ -92,7 +93,9 @@
             hh = "0" + hh;
         if (mm < 10)
             mm = "0" + mm;
-        return day + "/" + month + "/" + year;
+        if (ss < 10)
+            ss = "0" + ss;
+        return day + "/" + month + "/" + year + " " + hh + ":" + mm + ":" + ss;
     },
     startLoading: function () {
         if ($('.dv-loading').length > 0)
@@ -135,7 +138,7 @@
     }
 }
 
-$(document).ajaxSend(function(e, xhr, options) {
+$(document).ajaxSend(function (e, xhr, options) {
     if (options.type.toUpperCase() == "POST" || options.type.toUpperCase() == "PUT") {
         var token = $('form').find("input[name='__RequestVerificationToken']").val();
         xhr.setRequestHeader("RequestVerificationToken", token);
