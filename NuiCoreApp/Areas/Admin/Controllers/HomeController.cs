@@ -7,9 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace NuiCoreApp.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class HomeController : Controller
+    public class HomeController : AdminBaseController
     {
         public IActionResult Index()
         {

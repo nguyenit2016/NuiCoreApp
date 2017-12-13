@@ -1,9 +1,10 @@
 ﻿using NuiCoreApp.Application.ViewModels;
+using System;
 using System.Collections.Generic;
 
 namespace NuiCoreApp.Application.Interfaces
 {
-    public interface IProductCategoryService
+    public interface IProductCategoryService : IDisposable
     {
         ProductCategoryViewModel Add(ProductCategoryViewModel productCategoryVm);
 

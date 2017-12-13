@@ -23,6 +23,9 @@
 
     <!-- Custom Theme Style -->
     <link href="~/lib/gentelella/build/css/custom.min.css" rel="stylesheet">
+
+    @RenderSection("style", required: false)
+
     <style type="text/css">
         .jqstooltip {
             position: absolute;
@@ -57,7 +60,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+                        <a href="/Admin/Home/Index" class="site_title"><i class="fa fa-paw"></i> <span>Cổng thông tin</span></a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -198,7 +201,7 @@
             <!-- page content -->
             <div class="right_col" role="main" style="min-height: 1381px;">
                 <div class="">
-                    @RenderBody();
+                    @RenderBody()
                 </div>
             </div>
             <!-- /page content -->
@@ -223,6 +226,10 @@
     <script src="~/lib/gentelella/vendors/nprogress/nprogress.js"></script>
     <!-- Chart.js -->
     <script src="~/lib/gentelella/vendors/Chart.js/dist/Chart.min.js"></script>
+
+    <script src="~/lib/mustache/mustache.js"></script>
+    <script src="~/lib/twbs-pagination/jquery.twbsPagination.js"></script>
+
     <!-- jQuery Sparklines -->
     <script src="~/lib/gentelella/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
     <!-- Flot -->
@@ -247,6 +254,8 @@
     <script src="~/app/shared/nui.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="~/lib/gentelella/build/js/custom.min.js"></script>
+
+    @RenderSection("scripts", required: false)
 
     <div class="daterangepicker dropdown-menu ltr opensleft"><div class="calendar left"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="calendar right"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="ranges"><ul><li data-range-key="Today">Today</li><li data-range-key="Yesterday">Yesterday</li><li data-range-key="Last 7 Days">Last 7 Days</li><li data-range-key="Last 30 Days">Last 30 Days</li><li data-range-key="This Month">This Month</li><li data-range-key="Last Month">Last Month</li><li data-range-key="Custom">Custom</li></ul><div class="range_inputs"><button class="applyBtn btn btn-default btn-small btn-primary" disabled="disabled" type="button">Submit</button> <button class="cancelBtn btn btn-default btn-small" type="button">Clear</button></div></div></div>
 </body>

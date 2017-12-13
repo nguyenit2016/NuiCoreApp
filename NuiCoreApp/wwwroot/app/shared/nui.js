@@ -16,7 +16,7 @@
             // arrow size in pixels
             arrowSize: 5,
             // position defines the notification position though uses the defaults below
-            position: 'top right',
+            position: '...',
             // default positions
             elementPosition: 'top right',
             globalPosition: 'top right',
@@ -75,7 +75,7 @@
             mm = "0" + mm;
         return day + "/" + month + "/" + year;
     },
-    dateTimeFomatJson: function (datetime) {
+    dateTimeFormatJson: function (datetime) {
         if (datetime == null || datetime == '')
             return '';
         var newdate = new Date(parseInt(datetime.substr(6)));
@@ -127,9 +127,9 @@
         for (var i = 0; i < arr.length; i += 1) {
             var node = arr[i];
             node.children = [];
-            map[node.Id] = i; // use map to look-up the parents
-            if (node.ParentId !== null) {
-                arr[map[node.ParentId]].children.push(node);
+            map[node.id] = i; // use map to look-up the parents
+            if (node.parentId !== null) {
+                arr[map[node.parentId]].children.push(node);
             } else {
                 roots.push(node);
             }
@@ -138,7 +138,7 @@
     }
 }
 
-$(document).ajaxSend(function(e, xhr, options) {
+$(document).ajaxSend(function (e, xhr, options) {
     if (options.type.toUpperCase() == "POST" || options.type.toUpperCase() == "PUT") {
         var token = $('form').find("input[name='__RequestVerificationToken']").val();
         xhr.setRequestHeader("RequestVerificationToken", token);

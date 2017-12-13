@@ -1,5 +1,7 @@
 ﻿@using NuiCoreApp.Views.Manage
-@inject SignInManager<ApplicationUser> SignInManager
+@using NuiCoreApp.Data.Entities
+
+@inject SignInManager<AppUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }
