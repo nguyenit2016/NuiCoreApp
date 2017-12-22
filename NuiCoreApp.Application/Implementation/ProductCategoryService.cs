@@ -86,6 +86,8 @@ namespace NuiCoreApp.Application.Implementation
             int tempOrder = source.SortOrder;
             source.SortOrder = target.SortOrder;
             target.SortOrder = tempOrder;
+            if (source.ParentId != null)
+                source.ParentId = null;
 
             _productCategoryRepository.Update(source);
             _productCategoryRepository.Update(target);
@@ -98,7 +100,8 @@ namespace NuiCoreApp.Application.Implementation
 
         public void Update(ProductCategoryViewModel productCategoryVm)
         {
-            throw new NotImplementedException();
+            var productCategory = Mapper.Map<ProductCategoryViewModel, ProductCategory>(productCategoryVm);
+            _productCategoryRepository.Update(productCategory);
         }
 
         public void UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items)

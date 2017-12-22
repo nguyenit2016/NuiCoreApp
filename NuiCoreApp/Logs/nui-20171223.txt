@@ -1,0 +1,723 @@
+2017-12-23T00:08:26.0668078+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:08:27.4344948+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-23T00:08:27.4779099+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-23T00:08:27.5186780+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2017-12-23T00:08:27.5763897+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2017-12-23T00:08:27.6001586+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2017-12-23T00:08:27.6073208+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2017-12-23T00:08:27.6153518+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2017-12-23T00:08:27.6245284+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2017-12-23T00:08:27.6371722+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2017-12-23T00:08:27.6491770+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-23T00:08:27.6539267+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-23T00:08:27.6687249+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2017-12-23T00:08:27.9584430+07:00 0HLA9BQF8AT3L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44373/   (ca22a1cb)
+2017-12-23T00:08:28.0509878+07:00 0HLA9BQF8AT3L:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:08:28.3234327+07:00 0HLA9BQF8AT3L:00000001 [INF] Executing action method "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:08:34.2710340+07:00 0HLA9BQF8AT3L:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-23T00:08:36.0498518+07:00 0HLA9BQF8AT3L:00000001 [INF] Executed action "NuiCoreApp.Controllers.HomeController.Index (NuiCoreApp)" in 7733.2601ms (afa2e885)
+2017-12-23T00:08:36.0583122+07:00 0HLA9BQF8AT3L:00000001 [INF] Request finished in 8119.7843ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:08:45.2483207+07:00 0HLA9BQF8AT3L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44373/admin   (ca22a1cb)
+2017-12-23T00:08:45.2554876+07:00 0HLA9BQF8AT3L:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:08:45.2623458+07:00 0HLA9BQF8AT3L:00000002 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.LoginController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:08:45.7489349+07:00 0HLA9BQF8AT3L:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2017-12-23T00:08:45.8503015+07:00 0HLA9BQF8AT3L:00000002 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.LoginController.Index (NuiCoreApp)" in 588.9453ms (afa2e885)
+2017-12-23T00:08:45.8511645+07:00 0HLA9BQF8AT3L:00000002 [INF] Request finished in 602.6927ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:08:46.0397197+07:00 0HLA9BQF8AT3L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44373/admin   (ca22a1cb)
+2017-12-23T00:08:46.0416588+07:00 0HLA9BQF8AT3L:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:08:46.0423711+07:00 0HLA9BQF8AT3L:00000003 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.LoginController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:08:46.0427559+07:00 0HLA9BQF8AT3L:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2017-12-23T00:08:46.0445983+07:00 0HLA9BQF8AT3L:00000003 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.LoginController.Index (NuiCoreApp)" in 2.3221ms (afa2e885)
+2017-12-23T00:08:46.0448097+07:00 0HLA9BQF8AT3L:00000003 [INF] Request finished in 5.2427ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:08:48.0316900+07:00 0HLA9BQF8AT3L:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44373/Admin/Login/Auth application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2017-12-23T00:08:48.0326124+07:00 0HLA9BQF8AT3L:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:08:48.1606543+07:00 0HLA9BQF8AT3L:00000004 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.LoginController.Auth (NuiCoreApp)" with arguments (["NuiCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:08:48.1702307+07:00 0HLA9BQF8AT3L:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:08:48.2833122+07:00 0HLA9BQF8AT3L:00000004 [INF] Executed DbCommand ("44"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2017-12-23T00:08:48.4824785+07:00 0HLA9BQF8AT3L:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2017-12-23T00:08:48.5650514+07:00 0HLA9BQF8AT3L:00000004 [INF] Executed DbCommand ("9"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2017-12-23T00:08:48.5837590+07:00 0HLA9BQF8AT3L:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2017-12-23T00:08:48.6249304+07:00 0HLA9BQF8AT3L:00000004 [INF] Executed DbCommand ("12"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2017-12-23T00:08:48.6283416+07:00 0HLA9BQF8AT3L:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2017-12-23T00:08:48.6392338+07:00 0HLA9BQF8AT3L:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-12-23T00:08:48.6402915+07:00 0HLA9BQF8AT3L:00000004 [INF] User logged in. (fdce0db4)
+2017-12-23T00:08:48.6482134+07:00 0HLA9BQF8AT3L:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:08:48.7008814+07:00 0HLA9BQF8AT3L:00000004 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.LoginController.Auth (NuiCoreApp)" in 601.5395ms (afa2e885)
+2017-12-23T00:08:48.7032794+07:00 0HLA9BQF8AT3L:00000004 [INF] Request finished in 671.3158ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:08:48.7249033+07:00 0HLA9BQF8AT3L:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/Home/Index   (ca22a1cb)
+2017-12-23T00:08:48.7257786+07:00 0HLA9BQF8AT3L:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:08:48.7420959+07:00 0HLA9BQF8AT3L:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:08:48.7442824+07:00 0HLA9BQF8AT3L:00000005 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:08:48.9738058+07:00 0HLA9BQF8AT3L:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2017-12-23T00:08:49.5046371+07:00 0HLA9BQF8AT3L:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:08:49.5841105+07:00 0HLA9BQF8AT3L:00000005 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2017-12-23T00:08:50.1460483+07:00 0HLA9BQF8AT3L:00000005 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.HomeController.Index (NuiCoreApp)" in 1417.8071ms (afa2e885)
+2017-12-23T00:08:50.1475311+07:00 0HLA9BQF8AT3L:00000005 [INF] Request finished in 1422.5645ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:08:54.0701278+07:00 0HLA9BQF8AT3L:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44373/admin/productcategory/index   (ca22a1cb)
+2017-12-23T00:08:54.0724568+07:00 0HLA9BQF8AT3L:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:08:54.0825750+07:00 0HLA9BQF8AT3L:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:08:54.0867798+07:00 0HLA9BQF8AT3L:00000006 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:08:54.2639403+07:00 0HLA9BQF8AT3L:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2017-12-23T00:08:55.4191310+07:00 0HLA9BQF8AT3L:00000006 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:08:55.4226372+07:00 0HLA9BQF8AT3L:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2017-12-23T00:08:55.4348569+07:00 0HLA9BQF8AT3L:00000006 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" in 1354.5958ms (afa2e885)
+2017-12-23T00:08:55.4374286+07:00 0HLA9BQF8AT3L:00000006 [INF] Request finished in 1367.2349ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:08:55.8163112+07:00 0HLA9BQF8AT3L:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44373/app/controllers/productCategory/index.js?v=mJ6rBUQUNq5s0ZSgzBPjgtkMhoFtpVXX-pI0PNAkr6I   (ca22a1cb)
+2017-12-23T00:08:55.8203340+07:00 0HLA9BQF8AT3L:00000007 [INF] Sending file. Request path: '"/app/controllers/productCategory/index.js"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\app\controllers\productCategory\index.js"' (27b0a520)
+2017-12-23T00:08:55.8304220+07:00 0HLA9BQF8AT3L:00000007 [INF] Request finished in 14.1415ms 200 application/javascript (791a596a)
+2017-12-23T00:08:56.3408968+07:00 0HLA9BQF8AT3L:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:08:56.3417953+07:00 0HLA9BQF8AT3L:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:08:56.3466169+07:00 0HLA9BQF8AT3L:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:08:56.3468429+07:00 0HLA9BQF8AT3L:00000008 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:08:56.3505584+07:00 0HLA9BQF8AT3L:00000008 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:08:56.4263801+07:00 0HLA9BQF8AT3L:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:08:56.5032668+07:00 0HLA9BQF8AT3L:00000008 [INF] Executed DbCommand ("57"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:08:56.5156713+07:00 0HLA9BQF8AT3L:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:08:56.5169915+07:00 0HLA9BQF8AT3L:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:08:56.5184567+07:00 0HLA9BQF8AT3L:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:08:56.5193654+07:00 0HLA9BQF8AT3L:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:08:56.6019341+07:00 0HLA9BQF8AT3L:00000008 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 255.3253ms (afa2e885)
+2017-12-23T00:08:56.6024337+07:00 0HLA9BQF8AT3L:00000008 [INF] Request finished in 261.6109ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:02.4642773+07:00 0HLA9BQF8AT3L:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetById?id=3   (ca22a1cb)
+2017-12-23T00:09:02.4651607+07:00 0HLA9BQF8AT3L:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:02.4682265+07:00 0HLA9BQF8AT3L:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:02.4695397+07:00 0HLA9BQF8AT3L:00000009 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NuiCoreApp)" with arguments (["3"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:02.4727176+07:00 0HLA9BQF8AT3L:00000009 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:02.4867595+07:00 0HLA9BQF8AT3L:00000009 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[CreatedDate], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeyWord], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status], [x].[UpdatedDate]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2017-12-23T00:09:02.5845809+07:00 0HLA9BQF8AT3L:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:02.5851596+07:00 0HLA9BQF8AT3L:00000009 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NuiCoreApp)" in 116.8736ms (afa2e885)
+2017-12-23T00:09:02.5855136+07:00 0HLA9BQF8AT3L:00000009 [INF] Request finished in 121.2573ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:02.5993753+07:00 0HLA9BQF8AT3L:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:02.6002382+07:00 0HLA9BQF8AT3L:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:02.6006474+07:00 0HLA9BQF8AT3L:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:02.6008212+07:00 0HLA9BQF8AT3L:0000000A [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:02.6013755+07:00 0HLA9BQF8AT3L:0000000A [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:02.6030154+07:00 0HLA9BQF8AT3L:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:02.6039592+07:00 0HLA9BQF8AT3L:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:02.6048295+07:00 0HLA9BQF8AT3L:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:02.6055991+07:00 0HLA9BQF8AT3L:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:02.6063268+07:00 0HLA9BQF8AT3L:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:02.6067274+07:00 0HLA9BQF8AT3L:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:02.6075644+07:00 0HLA9BQF8AT3L:0000000A [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 6.8984ms (afa2e885)
+2017-12-23T00:09:02.6078554+07:00 0HLA9BQF8AT3L:0000000A [INF] Request finished in 8.5683ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:08.6953381+07:00 0HLA9BQF8AT3L:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:44373/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 159 (ca22a1cb)
+2017-12-23T00:09:08.6961899+07:00 0HLA9BQF8AT3L:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:08.7541975+07:00 0HLA9BQF8AT3L:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:08.7633809+07:00 0HLA9BQF8AT3L:0000000B [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (NuiCoreApp)" with arguments (["NuiCoreApp.Application.ViewModels.ProductCategoryViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:08.7990479+07:00 0HLA9BQF8AT3L:0000000B [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:08.9172728+07:00 0HLA9BQF8AT3L:0000000B [INF] Executed DbCommand ("66"ms) [Parameters=["@p14='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [CreatedDate] = @p0, [Description] = @p1, [HomeFlag] = @p2, [HomeOrder] = @p3, [Image] = @p4, [Name] = @p5, [ParentId] = @p6, [SeoAlias] = @p7, [SeoDescription] = @p8, [SeoKeyWord] = @p9, [SeoPageTitle] = @p10, [SortOrder] = @p11, [Status] = @p12, [UpdatedDate] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2017-12-23T00:09:08.9258279+07:00 0HLA9BQF8AT3L:0000000B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:08.9265719+07:00 0HLA9BQF8AT3L:0000000B [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (NuiCoreApp)" in 172.2413ms (afa2e885)
+2017-12-23T00:09:08.9270979+07:00 0HLA9BQF8AT3L:0000000B [INF] Request finished in 231.8283ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:08.9546517+07:00 0HLA9BQF8AT3L:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:08.9556486+07:00 0HLA9BQF8AT3L:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:08.9560304+07:00 0HLA9BQF8AT3L:0000000C [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:08.9562701+07:00 0HLA9BQF8AT3L:0000000C [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:08.9568292+07:00 0HLA9BQF8AT3L:0000000C [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:08.9586270+07:00 0HLA9BQF8AT3L:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:08.9604021+07:00 0HLA9BQF8AT3L:0000000C [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:08.9613832+07:00 0HLA9BQF8AT3L:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:08.9622535+07:00 0HLA9BQF8AT3L:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:08.9630428+07:00 0HLA9BQF8AT3L:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:08.9634499+07:00 0HLA9BQF8AT3L:0000000C [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:08.9644378+07:00 0HLA9BQF8AT3L:0000000C [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 8.3684ms (afa2e885)
+2017-12-23T00:09:08.9646959+07:00 0HLA9BQF8AT3L:0000000C [INF] Request finished in 10.197ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:08.9917651+07:00 0HLA9BQF8AT3L:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:08.9931451+07:00 0HLA9BQF8AT3L:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:08.9937371+07:00 0HLA9BQF8AT3L:0000000D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:08.9939464+07:00 0HLA9BQF8AT3L:0000000D [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:08.9945316+07:00 0HLA9BQF8AT3L:0000000D [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:08.9963110+07:00 0HLA9BQF8AT3L:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:08.9974856+07:00 0HLA9BQF8AT3L:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:08.9991632+07:00 0HLA9BQF8AT3L:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:09.0001969+07:00 0HLA9BQF8AT3L:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:09.0016214+07:00 0HLA9BQF8AT3L:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:09.0020979+07:00 0HLA9BQF8AT3L:0000000D [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:09.0032219+07:00 0HLA9BQF8AT3L:0000000D [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 9.3974ms (afa2e885)
+2017-12-23T00:09:09.0035870+07:00 0HLA9BQF8AT3L:0000000D [INF] Request finished in 11.8163ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:11.0975030+07:00 0HLA9BQF8AT3L:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44373/admin/productcategory/index   (ca22a1cb)
+2017-12-23T00:09:11.0983343+07:00 0HLA9BQF8AT3L:0000000E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:11.0986814+07:00 0HLA9BQF8AT3L:0000000E [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:11.0988680+07:00 0HLA9BQF8AT3L:0000000E [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:11.0990534+07:00 0HLA9BQF8AT3L:0000000E [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2017-12-23T00:09:11.1002630+07:00 0HLA9BQF8AT3L:0000000E [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:11.1015729+07:00 0HLA9BQF8AT3L:0000000E [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2017-12-23T00:09:11.1051030+07:00 0HLA9BQF8AT3L:0000000E [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" in 6.2761ms (afa2e885)
+2017-12-23T00:09:11.1098480+07:00 0HLA9BQF8AT3L:0000000E [INF] Request finished in 8.6843ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:09:11.4374393+07:00 0HLA9BQF8AT3L:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:11.4382971+07:00 0HLA9BQF8AT3L:0000000F [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:11.4387817+07:00 0HLA9BQF8AT3L:0000000F [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:11.4391917+07:00 0HLA9BQF8AT3L:0000000F [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:11.4399429+07:00 0HLA9BQF8AT3L:0000000F [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:11.4415923+07:00 0HLA9BQF8AT3L:0000000F [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:11.4427891+07:00 0HLA9BQF8AT3L:0000000F [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:11.4447273+07:00 0HLA9BQF8AT3L:0000000F [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:11.4459460+07:00 0HLA9BQF8AT3L:0000000F [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:11.4473521+07:00 0HLA9BQF8AT3L:0000000F [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:11.4477622+07:00 0HLA9BQF8AT3L:0000000F [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:11.4485892+07:00 0HLA9BQF8AT3L:0000000F [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 9.8717ms (afa2e885)
+2017-12-23T00:09:11.4488208+07:00 0HLA9BQF8AT3L:0000000F [INF] Request finished in 11.4872ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:11.5904157+07:00 0HLA9BQF8AT3L:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:44373/favicon.ico   (ca22a1cb)
+2017-12-23T00:09:11.5919914+07:00 0HLA9BQF8AT3L:00000010 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2017-12-23T00:09:11.5963001+07:00 0HLA9BQF8AT3L:00000010 [INF] Request finished in 6.3728ms 200 image/x-icon (791a596a)
+2017-12-23T00:09:13.4720717+07:00 0HLA9BQF8AT3L:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetById?id=3   (ca22a1cb)
+2017-12-23T00:09:13.4730198+07:00 0HLA9BQF8AT3L:00000011 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:13.4734132+07:00 0HLA9BQF8AT3L:00000011 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:13.4738468+07:00 0HLA9BQF8AT3L:00000011 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NuiCoreApp)" with arguments (["3"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:13.4745557+07:00 0HLA9BQF8AT3L:00000011 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:13.4765924+07:00 0HLA9BQF8AT3L:00000011 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[CreatedDate], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeyWord], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status], [x].[UpdatedDate]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2017-12-23T00:09:13.4794980+07:00 0HLA9BQF8AT3L:00000011 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:13.4799406+07:00 0HLA9BQF8AT3L:00000011 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NuiCoreApp)" in 6.5337ms (afa2e885)
+2017-12-23T00:09:13.4802025+07:00 0HLA9BQF8AT3L:00000011 [INF] Request finished in 8.2558ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:13.4925814+07:00 0HLA9BQF8AT3L:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:13.4935287+07:00 0HLA9BQF8AT3L:00000012 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:13.4939229+07:00 0HLA9BQF8AT3L:00000012 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:13.4941335+07:00 0HLA9BQF8AT3L:00000012 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:13.4947238+07:00 0HLA9BQF8AT3L:00000012 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:13.4962366+07:00 0HLA9BQF8AT3L:00000012 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:13.4969980+07:00 0HLA9BQF8AT3L:00000012 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:13.4982236+07:00 0HLA9BQF8AT3L:00000012 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:13.4994156+07:00 0HLA9BQF8AT3L:00000012 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:13.5014797+07:00 0HLA9BQF8AT3L:00000012 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:13.5018543+07:00 0HLA9BQF8AT3L:00000012 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:13.5029646+07:00 0HLA9BQF8AT3L:00000012 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 8.7806ms (afa2e885)
+2017-12-23T00:09:13.5035053+07:00 0HLA9BQF8AT3L:00000012 [INF] Request finished in 11.0052ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:17.6945941+07:00 0HLA9BQF8AT3L:00000013 [INF] Request starting HTTP/1.1 POST http://localhost:44373/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 164 (ca22a1cb)
+2017-12-23T00:09:17.6954533+07:00 0HLA9BQF8AT3L:00000013 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:17.6958548+07:00 0HLA9BQF8AT3L:00000013 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:17.6968141+07:00 0HLA9BQF8AT3L:00000013 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (NuiCoreApp)" with arguments (["NuiCoreApp.Application.ViewModels.ProductCategoryViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:17.6979522+07:00 0HLA9BQF8AT3L:00000013 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:17.7087182+07:00 0HLA9BQF8AT3L:00000013 [INF] Executed DbCommand ("1"ms) [Parameters=["@p14='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [CreatedDate] = @p0, [Description] = @p1, [HomeFlag] = @p2, [HomeOrder] = @p3, [Image] = @p4, [Name] = @p5, [ParentId] = @p6, [SeoAlias] = @p7, [SeoDescription] = @p8, [SeoKeyWord] = @p9, [SeoPageTitle] = @p10, [SortOrder] = @p11, [Status] = @p12, [UpdatedDate] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2017-12-23T00:09:17.7110305+07:00 0HLA9BQF8AT3L:00000013 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:17.7114281+07:00 0HLA9BQF8AT3L:00000013 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (NuiCoreApp)" in 15.6239ms (afa2e885)
+2017-12-23T00:09:17.7117590+07:00 0HLA9BQF8AT3L:00000013 [INF] Request finished in 17.2141ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:17.7353469+07:00 0HLA9BQF8AT3L:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:17.7361773+07:00 0HLA9BQF8AT3L:00000014 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:17.7364876+07:00 0HLA9BQF8AT3L:00000014 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:17.7366575+07:00 0HLA9BQF8AT3L:00000014 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:17.7371203+07:00 0HLA9BQF8AT3L:00000014 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:17.7400315+07:00 0HLA9BQF8AT3L:00000014 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:17.7412789+07:00 0HLA9BQF8AT3L:00000014 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:17.7422065+07:00 0HLA9BQF8AT3L:00000014 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:17.7428849+07:00 0HLA9BQF8AT3L:00000014 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:17.7435590+07:00 0HLA9BQF8AT3L:00000014 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:17.7438818+07:00 0HLA9BQF8AT3L:00000014 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:17.7446074+07:00 0HLA9BQF8AT3L:00000014 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 8.1162ms (afa2e885)
+2017-12-23T00:09:17.7448432+07:00 0HLA9BQF8AT3L:00000014 [INF] Request finished in 9.5896ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:17.7690029+07:00 0HLA9BQF8AT3L:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:17.7702190+07:00 0HLA9BQF8AT3L:00000015 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:17.7707100+07:00 0HLA9BQF8AT3L:00000015 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:17.7708996+07:00 0HLA9BQF8AT3L:00000015 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:17.7714219+07:00 0HLA9BQF8AT3L:00000015 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:17.7818475+07:00 0HLA9BQF8AT3L:00000015 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:17.7830024+07:00 0HLA9BQF8AT3L:00000015 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:17.7839257+07:00 0HLA9BQF8AT3L:00000015 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:17.7848429+07:00 0HLA9BQF8AT3L:00000015 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:17.7857615+07:00 0HLA9BQF8AT3L:00000015 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:17.7861785+07:00 0HLA9BQF8AT3L:00000015 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:17.7870612+07:00 0HLA9BQF8AT3L:00000015 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 16.3965ms (afa2e885)
+2017-12-23T00:09:17.7873193+07:00 0HLA9BQF8AT3L:00000015 [INF] Request finished in 18.3968ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:19.4064184+07:00 0HLA9BQF8AT3L:00000016 [INF] Request starting HTTP/1.1 GET http://localhost:44373/admin/productcategory/index   (ca22a1cb)
+2017-12-23T00:09:19.4074075+07:00 0HLA9BQF8AT3L:00000016 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:19.4077936+07:00 0HLA9BQF8AT3L:00000016 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:19.4079760+07:00 0HLA9BQF8AT3L:00000016 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:19.4081712+07:00 0HLA9BQF8AT3L:00000016 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2017-12-23T00:09:19.4093428+07:00 0HLA9BQF8AT3L:00000016 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:19.4107519+07:00 0HLA9BQF8AT3L:00000016 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2017-12-23T00:09:19.4128178+07:00 0HLA9BQF8AT3L:00000016 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" in 5.015ms (afa2e885)
+2017-12-23T00:09:19.4130874+07:00 0HLA9BQF8AT3L:00000016 [INF] Request finished in 6.7675ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:09:19.6726775+07:00 0HLA9BQF8AT3L:00000017 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:19.6737545+07:00 0HLA9BQF8AT3L:00000017 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:19.6741821+07:00 0HLA9BQF8AT3L:00000017 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:19.6744265+07:00 0HLA9BQF8AT3L:00000017 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:19.6750416+07:00 0HLA9BQF8AT3L:00000017 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:19.6771450+07:00 0HLA9BQF8AT3L:00000017 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:19.6854613+07:00 0HLA9BQF8AT3L:00000017 [INF] Executed DbCommand ("7"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:19.6880646+07:00 0HLA9BQF8AT3L:00000017 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:19.6890628+07:00 0HLA9BQF8AT3L:00000017 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:19.6899100+07:00 0HLA9BQF8AT3L:00000017 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:19.6902871+07:00 0HLA9BQF8AT3L:00000017 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:19.6910520+07:00 0HLA9BQF8AT3L:00000017 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 16.9217ms (afa2e885)
+2017-12-23T00:09:19.6913225+07:00 0HLA9BQF8AT3L:00000017 [INF] Request finished in 18.7281ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:19.7702918+07:00 0HLA9BQF8AT3L:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:44373/favicon.ico   (ca22a1cb)
+2017-12-23T00:09:19.7706612+07:00 0HLA9BQF8AT3L:00000018 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2017-12-23T00:09:19.7719501+07:00 0HLA9BQF8AT3L:00000018 [INF] Request finished in 1.1818ms 200 image/x-icon (791a596a)
+2017-12-23T00:09:31.5755122+07:00 0HLA9BQF8AT3L:00000019 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetById?id=3   (ca22a1cb)
+2017-12-23T00:09:31.5767098+07:00 0HLA9BQF8AT3L:00000019 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:31.5774432+07:00 0HLA9BQF8AT3L:00000019 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:31.5778541+07:00 0HLA9BQF8AT3L:00000019 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NuiCoreApp)" with arguments (["3"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:31.5788784+07:00 0HLA9BQF8AT3L:00000019 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:31.6996456+07:00 0HLA9BQF8AT3L:00000019 [INF] Executed DbCommand ("119"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[CreatedDate], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeyWord], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status], [x].[UpdatedDate]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2017-12-23T00:09:31.7008300+07:00 0HLA9BQF8AT3L:00000019 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:31.7014978+07:00 0HLA9BQF8AT3L:00000019 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NuiCoreApp)" in 123.9741ms (afa2e885)
+2017-12-23T00:09:31.7020174+07:00 0HLA9BQF8AT3L:00000019 [INF] Request finished in 126.6503ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:31.7172608+07:00 0HLA9BQF8AT3L:0000001A [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:31.7184436+07:00 0HLA9BQF8AT3L:0000001A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:31.7189769+07:00 0HLA9BQF8AT3L:0000001A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:31.7193244+07:00 0HLA9BQF8AT3L:0000001A [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:31.7200650+07:00 0HLA9BQF8AT3L:0000001A [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:31.7260779+07:00 0HLA9BQF8AT3L:0000001A [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:31.8079043+07:00 0HLA9BQF8AT3L:0000001A [INF] Executed DbCommand ("81"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:31.8086808+07:00 0HLA9BQF8AT3L:0000001A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:31.8093665+07:00 0HLA9BQF8AT3L:0000001A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:31.8100488+07:00 0HLA9BQF8AT3L:0000001A [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:31.8104036+07:00 0HLA9BQF8AT3L:0000001A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:31.8112110+07:00 0HLA9BQF8AT3L:0000001A [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 92.2816ms (afa2e885)
+2017-12-23T00:09:31.8115363+07:00 0HLA9BQF8AT3L:0000001A [INF] Request finished in 94.4715ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:36.5802191+07:00 0HLA9BQF8AT3L:0000001B [INF] Request starting HTTP/1.1 POST http://localhost:44373/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 160 (ca22a1cb)
+2017-12-23T00:09:36.5810251+07:00 0HLA9BQF8AT3L:0000001B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:36.5813740+07:00 0HLA9BQF8AT3L:0000001B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:36.5820152+07:00 0HLA9BQF8AT3L:0000001B [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (NuiCoreApp)" with arguments (["NuiCoreApp.Application.ViewModels.ProductCategoryViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:36.5826786+07:00 0HLA9BQF8AT3L:0000001B [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:36.6262406+07:00 0HLA9BQF8AT3L:0000001B [INF] Executed DbCommand ("41"ms) [Parameters=["@p14='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [CreatedDate] = @p0, [Description] = @p1, [HomeFlag] = @p2, [HomeOrder] = @p3, [Image] = @p4, [Name] = @p5, [ParentId] = @p6, [SeoAlias] = @p7, [SeoDescription] = @p8, [SeoKeyWord] = @p9, [SeoPageTitle] = @p10, [SortOrder] = @p11, [Status] = @p12, [UpdatedDate] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2017-12-23T00:09:36.6283325+07:00 0HLA9BQF8AT3L:0000001B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:36.6286271+07:00 0HLA9BQF8AT3L:0000001B [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (NuiCoreApp)" in 47.292ms (afa2e885)
+2017-12-23T00:09:36.6288330+07:00 0HLA9BQF8AT3L:0000001B [INF] Request finished in 48.7598ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:36.6506936+07:00 0HLA9BQF8AT3L:0000001C [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:36.6515133+07:00 0HLA9BQF8AT3L:0000001C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:36.6518459+07:00 0HLA9BQF8AT3L:0000001C [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:36.6520261+07:00 0HLA9BQF8AT3L:0000001C [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:36.6525090+07:00 0HLA9BQF8AT3L:0000001C [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:36.6609908+07:00 0HLA9BQF8AT3L:0000001C [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:36.6649790+07:00 0HLA9BQF8AT3L:0000001C [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:36.6658599+07:00 0HLA9BQF8AT3L:0000001C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:36.6666188+07:00 0HLA9BQF8AT3L:0000001C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:36.6674420+07:00 0HLA9BQF8AT3L:0000001C [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:36.6677759+07:00 0HLA9BQF8AT3L:0000001C [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:36.6685750+07:00 0HLA9BQF8AT3L:0000001C [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 16.7055ms (afa2e885)
+2017-12-23T00:09:36.6688041+07:00 0HLA9BQF8AT3L:0000001C [INF] Request finished in 18.2512ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:36.7006554+07:00 0HLA9BQF8AT3L:0000001D [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:36.7014816+07:00 0HLA9BQF8AT3L:0000001D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:36.7018548+07:00 0HLA9BQF8AT3L:0000001D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:36.7020375+07:00 0HLA9BQF8AT3L:0000001D [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:36.7026707+07:00 0HLA9BQF8AT3L:0000001D [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:36.7071323+07:00 0HLA9BQF8AT3L:0000001D [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:36.7093453+07:00 0HLA9BQF8AT3L:0000001D [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:36.7103765+07:00 0HLA9BQF8AT3L:0000001D [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:36.7118793+07:00 0HLA9BQF8AT3L:0000001D [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:36.7129336+07:00 0HLA9BQF8AT3L:0000001D [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:36.7134032+07:00 0HLA9BQF8AT3L:0000001D [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:36.7144874+07:00 0HLA9BQF8AT3L:0000001D [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 12.5646ms (afa2e885)
+2017-12-23T00:09:36.7147696+07:00 0HLA9BQF8AT3L:0000001D [INF] Request finished in 14.2173ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:38.5781846+07:00 0HLA9BQF8AT3L:0000001E [INF] Request starting HTTP/1.1 GET http://localhost:44373/admin/productcategory/index   (ca22a1cb)
+2017-12-23T00:09:38.5790607+07:00 0HLA9BQF8AT3L:0000001E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:38.5794225+07:00 0HLA9BQF8AT3L:0000001E [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:38.5796365+07:00 0HLA9BQF8AT3L:0000001E [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:38.5798634+07:00 0HLA9BQF8AT3L:0000001E [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2017-12-23T00:09:38.5811779+07:00 0HLA9BQF8AT3L:0000001E [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:38.5934707+07:00 0HLA9BQF8AT3L:0000001E [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2017-12-23T00:09:38.5961413+07:00 0HLA9BQF8AT3L:0000001E [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" in 16.676ms (afa2e885)
+2017-12-23T00:09:38.5967333+07:00 0HLA9BQF8AT3L:0000001E [INF] Request finished in 18.6082ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:09:38.9459477+07:00 0HLA9BQF8AT3L:0000001F [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:38.9467909+07:00 0HLA9BQF8AT3L:0000001F [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:38.9471578+07:00 0HLA9BQF8AT3L:0000001F [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:38.9473611+07:00 0HLA9BQF8AT3L:0000001F [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:38.9479612+07:00 0HLA9BQF8AT3L:0000001F [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:38.9495420+07:00 0HLA9BQF8AT3L:0000001F [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:38.9509246+07:00 0HLA9BQF8AT3L:0000001F [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:38.9518548+07:00 0HLA9BQF8AT3L:0000001F [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:38.9526989+07:00 0HLA9BQF8AT3L:0000001F [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:38.9535066+07:00 0HLA9BQF8AT3L:0000001F [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:38.9538709+07:00 0HLA9BQF8AT3L:0000001F [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:38.9546422+07:00 0HLA9BQF8AT3L:0000001F [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 7.4883ms (afa2e885)
+2017-12-23T00:09:38.9548939+07:00 0HLA9BQF8AT3L:0000001F [INF] Request finished in 9.0485ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:39.0903570+07:00 0HLA9BQF8AT3L:00000020 [INF] Request starting HTTP/1.1 GET http://localhost:44373/favicon.ico   (ca22a1cb)
+2017-12-23T00:09:39.0907042+07:00 0HLA9BQF8AT3L:00000020 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2017-12-23T00:09:39.0912234+07:00 0HLA9BQF8AT3L:00000020 [INF] Request finished in 0.9057ms 200 image/x-icon (791a596a)
+2017-12-23T00:09:40.0909118+07:00 0HLA9BQF8AT3L:00000021 [INF] Request starting HTTP/1.1 POST http://localhost:44373/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2017-12-23T00:09:40.0920020+07:00 0HLA9BQF8AT3L:00000021 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:40.1095633+07:00 0HLA9BQF8AT3L:00000021 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:40.1866332+07:00 0HLA9BQF8AT3L:00000021 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (NuiCoreApp)" with arguments (["3", "1", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:40.1893878+07:00 0HLA9BQF8AT3L:00000021 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:40.1917125+07:00 0HLA9BQF8AT3L:00000021 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[CreatedDate], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeyWord], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status], [x].[UpdatedDate]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2017-12-23T00:09:40.2193249+07:00 0HLA9BQF8AT3L:00000021 [WRN] The LINQ expression '"where __items_0.ContainsKey([x].Id)"' could not be translated and will be evaluated locally. (011792c6)
+2017-12-23T00:09:40.2498686+07:00 0HLA9BQF8AT3L:00000021 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedDate], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeyWord], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status], [x].[UpdatedDate]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2017-12-23T00:09:40.2531333+07:00 0HLA9BQF8AT3L:00000021 [INF] Executed DbCommand ("0"ms) [Parameters=["@p14='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [CreatedDate] = @p0, [Description] = @p1, [HomeFlag] = @p2, [HomeOrder] = @p3, [Image] = @p4, [Name] = @p5, [ParentId] = @p6, [SeoAlias] = @p7, [SeoDescription] = @p8, [SeoKeyWord] = @p9, [SeoPageTitle] = @p10, [SortOrder] = @p11, [Status] = @p12, [UpdatedDate] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2017-12-23T00:09:40.2647802+07:00 0HLA9BQF8AT3L:00000021 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2017-12-23T00:09:40.2650640+07:00 0HLA9BQF8AT3L:00000021 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (NuiCoreApp)" in 155.5639ms (afa2e885)
+2017-12-23T00:09:40.2664474+07:00 0HLA9BQF8AT3L:00000021 [INF] Request finished in 175.616ms 200  (791a596a)
+2017-12-23T00:09:41.8669327+07:00 0HLA9BQF8AT3L:00000022 [INF] Request starting HTTP/1.1 GET http://localhost:44373/admin/productcategory/index   (ca22a1cb)
+2017-12-23T00:09:41.8680028+07:00 0HLA9BQF8AT3L:00000022 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:41.8683901+07:00 0HLA9BQF8AT3L:00000022 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:41.8686372+07:00 0HLA9BQF8AT3L:00000022 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:41.8688962+07:00 0HLA9BQF8AT3L:00000022 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2017-12-23T00:09:41.8706461+07:00 0HLA9BQF8AT3L:00000022 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:41.8726917+07:00 0HLA9BQF8AT3L:00000022 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2017-12-23T00:09:41.8762236+07:00 0HLA9BQF8AT3L:00000022 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (NuiCoreApp)" in 7.4951ms (afa2e885)
+2017-12-23T00:09:41.8773463+07:00 0HLA9BQF8AT3L:00000022 [INF] Request finished in 10.1927ms 200 text/html; charset=utf-8 (791a596a)
+2017-12-23T00:09:42.1422203+07:00 0HLA9BQF8AT3L:00000023 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:42.1433349+07:00 0HLA9BQF8AT3L:00000023 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:42.1437925+07:00 0HLA9BQF8AT3L:00000023 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:42.1439971+07:00 0HLA9BQF8AT3L:00000023 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:42.1445685+07:00 0HLA9BQF8AT3L:00000023 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:42.1463968+07:00 0HLA9BQF8AT3L:00000023 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:42.1548170+07:00 0HLA9BQF8AT3L:00000023 [INF] Executed DbCommand ("7"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:42.1557073+07:00 0HLA9BQF8AT3L:00000023 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:42.1567000+07:00 0HLA9BQF8AT3L:00000023 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:42.1575505+07:00 0HLA9BQF8AT3L:00000023 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:42.1579131+07:00 0HLA9BQF8AT3L:00000023 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:42.1587089+07:00 0HLA9BQF8AT3L:00000023 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 14.9788ms (afa2e885)
+2017-12-23T00:09:42.1589456+07:00 0HLA9BQF8AT3L:00000023 [INF] Request finished in 16.8241ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:42.2459420+07:00 0HLA9BQF8AT3L:00000024 [INF] Request starting HTTP/1.1 GET http://localhost:44373/favicon.ico   (ca22a1cb)
+2017-12-23T00:09:42.2462943+07:00 0HLA9BQF8AT3L:00000024 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Lập trình\C#\.NET Core\TeduShop\NuiCoreApp\NuiCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2017-12-23T00:09:42.2469167+07:00 0HLA9BQF8AT3L:00000024 [INF] Request finished in 0.9849ms 200 image/x-icon (791a596a)
+2017-12-23T00:09:43.7039155+07:00 0HLA9BQF8AT3L:00000025 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetById?id=3   (ca22a1cb)
+2017-12-23T00:09:43.7050258+07:00 0HLA9BQF8AT3L:00000025 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:43.7054316+07:00 0HLA9BQF8AT3L:00000025 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:43.7057848+07:00 0HLA9BQF8AT3L:00000025 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NuiCoreApp)" with arguments (["3"]) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:43.7064101+07:00 0HLA9BQF8AT3L:00000025 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:43.7088676+07:00 0HLA9BQF8AT3L:00000025 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[CreatedDate], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeyWord], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status], [x].[UpdatedDate]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2017-12-23T00:09:43.7093799+07:00 0HLA9BQF8AT3L:00000025 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:43.7097459+07:00 0HLA9BQF8AT3L:00000025 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (NuiCoreApp)" in 4.3515ms (afa2e885)
+2017-12-23T00:09:43.7099882+07:00 0HLA9BQF8AT3L:00000025 [INF] Request finished in 6.2217ms 200 application/json; charset=utf-8 (791a596a)
+2017-12-23T00:09:43.7204952+07:00 0HLA9BQF8AT3L:00000026 [INF] Request starting HTTP/1.1 GET http://localhost:44373/Admin/ProductCategory/GetAll   (ca22a1cb)
+2017-12-23T00:09:43.7213333+07:00 0HLA9BQF8AT3L:00000026 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2017-12-23T00:09:43.7217909+07:00 0HLA9BQF8AT3L:00000026 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2017-12-23T00:09:43.7220040+07:00 0HLA9BQF8AT3L:00000026 [INF] Executing action method "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-23T00:09:43.7225438+07:00 0HLA9BQF8AT3L:00000026 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NuiCoreApp.Data.EF " (9958f5bb)
+2017-12-23T00:09:43.7245185+07:00 0HLA9BQF8AT3L:00000026 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], CAST(COALESCE([x].[HomeFlag], 0) AS bit) AS [HomeFlag], [x].[CreatedDate], [x].[UpdatedDate], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeyWord], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[Id]" (0723d8ff)
+2017-12-23T00:09:43.7259892+07:00 0HLA9BQF8AT3L:00000026 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:43.7271912+07:00 0HLA9BQF8AT3L:00000026 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:43.7279702+07:00 0HLA9BQF8AT3L:00000026 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:43.7287476+07:00 0HLA9BQF8AT3L:00000026 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], CAST(COALESCE([dto].[HomeFlag], 0) AS bit) AS [HomeFlag], CAST(COALESCE([dto].[HotFlag], 0) AS bit) AS [HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[Status], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeyWord], [dto].[SeoDescription], [dto].[CreatedDate], [dto].[UpdatedDate]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2017-12-23T00:09:43.7290973+07:00 0HLA9BQF8AT3L:00000026 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-12-23T00:09:43.7299705+07:00 0HLA9BQF8AT3L:00000026 [INF] Executed action "NuiCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (NuiCoreApp)" in 8.2558ms (afa2e885)
+2017-12-23T00:09:43.7304808+07:00 0HLA9BQF8AT3L:00000026 [INF] Request finished in 9.9342ms 200 application/json; charset=utf-8 (791a596a)

@@ -142,11 +142,14 @@
     <script src="~/lib/jquery-validation/localization/messages_vi.js"></script>
 
     <script src="~/app/shared/nui.js"></script>
+    <!-- NProgress -->
+    <script src="~/lib/gentelella/vendors/nprogress/nprogress.js"></script>
     <script src="~/app/controllers/login/index.js"></script>
 
     <script>
         var login = new loginController();
         login.initialize();
+        $("#username").focus();
     </script>
 </body>
 </html>
