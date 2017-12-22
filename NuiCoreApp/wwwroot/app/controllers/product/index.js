@@ -29,7 +29,11 @@
             type: 'GET',
             url: '/admin/product/GetAllCategories',
             dataType: 'json',
+            beforeSend: function () {
+                NProgress.start();
+            },
             success: function (response) {
+                NProgress.done();
                 var render = "<option value=''>--Select category--</option>";
                 $.each(response, function (i, item) {
                     render += "<option value='" + item.Id + "'>" + item.Name + "</option>"
@@ -55,8 +59,11 @@
             },
             url: '/admin/product/GetAllPaging',
             dataType: 'json',
+            beforeSend: function() {
+                NProgress.start();
+            },
             success: function (response) {
-                console.log(response);
+                NProgress.done();
                 $.each(response.Results, function (i, item) {
                     render += Mustache.render(template, {
                         Id: item.Id,

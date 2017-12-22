@@ -4,6 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using NuiCoreApp.Application.Interfaces;
+using NuiCoreApp.Application.ViewModels;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using NuiCoreApp.Utilities.Helpers;
+using AutoMapper;
+using NuiCoreApp.Data.Entities;
 
 namespace NuiCoreApp.Areas.Admin.Controllers
 {
@@ -25,6 +30,52 @@ namespace NuiCoreApp.Areas.Admin.Controllers
         {
             var model = _productCategoryService.GetAll();
             return new OkObjectResult(model);
+        }
+
+        [HttpGet]
+        public IActionResult GetById(int id)
+        {
+            var model = _productCategoryService.GetById(id);
+            return new OkObjectResult(model);
+        }
+
+        [HttpPost]
+        public IActionResult SaveEntity(ProductCategoryViewModel productCategoryVm)
+        {
+            if (!ModelState.IsValid)
+            {
+                IEnumerable<ModelError> allErrors = ModelState.Values.SelectMany(v => v.Errors);
+                return new BadRequestObjectResult(allErrors);
+            }
+            else
+            {
+                productCategoryVm.SeoAlias = TextHelper.ToUnSignString(productCategoryVm.Name);
+                if(productCategoryVm.Id == 0)
+                {
+                    _productCategoryService.Add(productCategoryVm);
+                }
+                else
+                {
+                    _productCategoryService.Update(productCategoryVm);
+                }
+                _productCategoryService.Save();
+                return new OkObjectResult(productCategoryVm);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            if (id == 0)
+            {
+                return new BadRequestResult();
+            }
+            else
+            {
+                _productCategoryService.Delete(id);
+                _productCategoryService.Save();
+                return new OkObjectResult(id);
+            }
         }
 
         [HttpPost]
